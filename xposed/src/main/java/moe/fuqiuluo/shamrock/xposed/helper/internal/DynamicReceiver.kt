@@ -1,18 +1,18 @@
 @file:OptIn(DelicateCoroutinesApi::class)
-package moe.fuqiuluo.shamrock.xposed.helper.internal
+package moe.qiufuluo.shamrock.xposed.helper.internal
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.utils.PlatformUtils
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
 
 /**
  * 动态广播

@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.service.listener
+package moe.qiufuluo.shamrock.remote.service.listener
 
 import com.tencent.qqnt.kernel.nativeinterface.GProAVChannelConfig
 import com.tencent.qqnt.kernel.nativeinterface.GProAVRoomOptPushInfo
@@ -49,7 +49,7 @@ import com.tencent.qqnt.kernel.nativeinterface.GProVoiceSmobaGameUserActionPush
 import com.tencent.qqnt.kernel.nativeinterface.GProWorldState
 import com.tencent.qqnt.kernel.nativeinterface.GProYLGameTeamInfo
 import com.tencent.qqnt.kernel.nativeinterface.IKernelGuildListener
-import moe.fuqiuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.helper.LogCenter
 import java.util.ArrayList
 import java.util.HashMap
 

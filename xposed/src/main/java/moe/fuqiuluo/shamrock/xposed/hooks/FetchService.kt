@@ -1,5 +1,5 @@
 @file:OptIn(DelicateCoroutinesApi::class)
-package moe.fuqiuluo.shamrock.xposed.hooks
+package moe.qiufuluo.shamrock.xposed.hooks
 
 import android.content.Context
 import com.tencent.qqnt.kernel.api.IKernelService
@@ -7,13 +7,13 @@ import com.tencent.qqnt.kernel.api.impl.KernelServiceImpl
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import moe.fuqiuluo.shamrock.tools.hookMethod
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.xposed.helper.NTServiceFetcher
-import moe.fuqiuluo.shamrock.xposed.loader.NativeLoader
-import moe.fuqiuluo.symbols.XposedHook
+import moe.qiufuluo.shamrock.tools.hookMethod
+import moe.qiufuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.xposed.helper.NTServiceFetcher
+import moe.qiufuluo.shamrock.xposed.loader.NativeLoader
+import moe.qiufuluo.symbols.XposedHook
 
 @XposedHook(priority = 2)
 internal class FetchService: IAction {

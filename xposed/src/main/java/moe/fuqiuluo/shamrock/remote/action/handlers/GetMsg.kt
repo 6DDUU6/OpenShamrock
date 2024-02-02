@@ -1,16 +1,16 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import com.tencent.qqnt.kernel.nativeinterface.MsgConstant
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.shamrock.helper.MessageHelper
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.remote.service.data.MessageDetail
-import moe.fuqiuluo.shamrock.remote.service.data.MessageSender
-import moe.fuqiuluo.qqinterface.servlet.MsgSvc
-import moe.fuqiuluo.qqinterface.servlet.msg.convert.MessageConvert
-import moe.fuqiuluo.shamrock.tools.EmptyJsonString
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.helper.MessageHelper
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.remote.service.data.MessageDetail
+import moe.qiufuluo.shamrock.remote.service.data.MessageSender
+import moe.qiufuluo.qqinterface.servlet.MsgSvc
+import moe.qiufuluo.qqinterface.servlet.msg.convert.MessageConvert
+import moe.qiufuluo.shamrock.tools.EmptyJsonString
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("get_message", ["get_msg"])
 internal object GetMsg: IActionHandler() {

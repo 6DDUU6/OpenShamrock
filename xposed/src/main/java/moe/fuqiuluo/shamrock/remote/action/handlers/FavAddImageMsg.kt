@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import android.graphics.BitmapFactory
 import kotlinx.io.core.ByteReadPacket
@@ -8,14 +8,14 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromByteArray
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.protobuf.ProtoBuf
-import moe.fuqiuluo.qqinterface.servlet.QFavSvc
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.tools.EmptyJsonString
-import moe.fuqiuluo.shamrock.utils.CryptTools
-import moe.fuqiuluo.shamrock.utils.DeflateTools
-import moe.fuqiuluo.shamrock.utils.FileUtils
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.qqinterface.servlet.QFavSvc
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.tools.EmptyJsonString
+import moe.qiufuluo.shamrock.utils.CryptTools
+import moe.qiufuluo.shamrock.utils.DeflateTools
+import moe.qiufuluo.shamrock.utils.FileUtils
+import moe.qiufuluo.symbols.OneBotHandler
 import moe.whitechi73.protobuf.fav.WeiyunComm
 
 @OneBotHandler("fav.add_image_msg")

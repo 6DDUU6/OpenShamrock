@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.xposed.helper
+package moe.qiufuluo.shamrock.xposed.helper
 
 import com.tencent.qqnt.kernel.api.IKernelService
 import com.tencent.qqnt.kernel.api.impl.MsgService
@@ -10,15 +10,15 @@ import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.remote.service.PacketReceiver
-import moe.fuqiuluo.shamrock.remote.service.listener.AioListener
-import moe.fuqiuluo.shamrock.remote.service.listener.GroupEventListener
-import moe.fuqiuluo.shamrock.remote.service.listener.KernelGuildListener
-import moe.fuqiuluo.shamrock.remote.service.listener.PrimitiveListener
-import moe.fuqiuluo.shamrock.tools.hookMethod
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.remote.service.PacketReceiver
+import moe.qiufuluo.shamrock.remote.service.listener.AioListener
+import moe.qiufuluo.shamrock.remote.service.listener.GroupEventListener
+import moe.qiufuluo.shamrock.remote.service.listener.KernelGuildListener
+import moe.qiufuluo.shamrock.remote.service.listener.PrimitiveListener
+import moe.qiufuluo.shamrock.tools.hookMethod
+import moe.qiufuluo.shamrock.utils.PlatformUtils
 import kotlin.reflect.jvm.javaMethod
 
 internal object NTServiceFetcher {

@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import com.tencent.mobileqq.profilecard.api.IProfileCardBlacklistApi
 import com.tencent.mobileqq.qroute.QRoute
@@ -6,10 +6,10 @@ import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.tools.EmptyJsonString
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.tools.EmptyJsonString
+import moe.qiufuluo.symbols.OneBotHandler
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 

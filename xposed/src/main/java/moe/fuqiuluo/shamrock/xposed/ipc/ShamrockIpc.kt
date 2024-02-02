@@ -1,15 +1,15 @@
-package moe.fuqiuluo.shamrock.xposed.ipc
+package moe.qiufuluo.shamrock.xposed.ipc
 
 import android.os.IBinder
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.utils.PlatformUtils
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withTimeoutOrNull
-import moe.fuqiuluo.shamrock.tools.broadcast
-import moe.fuqiuluo.shamrock.xposed.helper.internal.DynamicReceiver
-import moe.fuqiuluo.shamrock.xposed.helper.internal.IPCRequest
-import moe.fuqiuluo.shamrock.xposed.ipc.bytedata.ByteDataCreator
-import moe.fuqiuluo.shamrock.xposed.ipc.qsign.QSignGenerator
+import moe.qiufuluo.shamrock.tools.broadcast
+import moe.qiufuluo.shamrock.xposed.helper.internal.DynamicReceiver
+import moe.qiufuluo.shamrock.xposed.helper.internal.IPCRequest
+import moe.qiufuluo.shamrock.xposed.ipc.bytedata.ByteDataCreator
+import moe.qiufuluo.shamrock.xposed.ipc.qsign.QSignGenerator
 import mqq.app.MobileQQ
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine

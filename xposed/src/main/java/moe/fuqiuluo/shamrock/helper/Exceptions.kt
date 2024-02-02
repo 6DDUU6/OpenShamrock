@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.helper
+package moe.qiufuluo.shamrock.helper
 
 internal abstract class InternalMessageMakerError(why: String): RuntimeException(why)
 

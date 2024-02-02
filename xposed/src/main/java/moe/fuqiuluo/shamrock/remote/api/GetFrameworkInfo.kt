@@ -1,12 +1,12 @@
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
 import io.ktor.server.routing.Routing
 import io.ktor.server.routing.get
 import kotlinx.coroutines.delay
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.tools.getOrPost
-import moe.fuqiuluo.shamrock.tools.respond
-import moe.fuqiuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.tools.getOrPost
+import moe.qiufuluo.shamrock.tools.respond
+import moe.qiufuluo.shamrock.helper.LogCenter
 import kotlin.system.exitProcess
 
 fun Routing.obtainFrameworkInfo() {
@@ -14,12 +14,12 @@ fun Routing.obtainFrameworkInfo() {
         respond(
             isOk = true,
             code = Status.Ok,
-            moe.fuqiuluo.shamrock.remote.HTTPServer.startTime
+            moe.qiufuluo.shamrock.remote.HTTPServer.startTime
         )
     }
 
     get("/shut") {
-        moe.fuqiuluo.shamrock.remote.HTTPServer.stop()
+        moe.qiufuluo.shamrock.remote.HTTPServer.stop()
         LogCenter.log("正在关闭Shamrock。", toast = true)
         delay(3000)
         exitProcess(0)

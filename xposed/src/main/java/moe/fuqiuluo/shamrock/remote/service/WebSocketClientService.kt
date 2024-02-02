@@ -1,15 +1,15 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 
-package moe.fuqiuluo.shamrock.remote.service
+package moe.qiufuluo.shamrock.remote.service
 
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-import moe.fuqiuluo.shamrock.remote.service.api.WebSocketClientServlet
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.remote.service.api.GlobalEventTransmitter
+import moe.qiufuluo.shamrock.remote.service.api.WebSocketClientServlet
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.remote.service.api.GlobalEventTransmitter
 
 internal class WebSocketClientService(
     override val address: String,

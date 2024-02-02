@@ -1,4 +1,4 @@
 // IQSign.aidl
-package moe.fuqiuluo.shamrock.xposed.ipc.qsign;
+package moe.qiufuluo.shamrock.xposed.ipc.qsign;
 
 parcelable IQSign;

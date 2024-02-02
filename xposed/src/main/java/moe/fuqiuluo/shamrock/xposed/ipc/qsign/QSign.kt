@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.xposed.ipc.qsign
+package moe.qiufuluo.shamrock.xposed.ipc.qsign
 
 import android.os.Parcel
 import android.os.Parcelable
@@ -6,9 +6,9 @@ import com.tencent.mobileqq.fe.FEKit
 import com.tencent.mobileqq.qsec.qsecdandelionsdk.Dandelion
 import com.tencent.mobileqq.qsec.qsecurity.QSec
 import com.tencent.qphone.base.util.BaseApplication
-import moe.fuqiuluo.shamrock.tools.toHexString
-import moe.fuqiuluo.shamrock.utils.MMKVFetcher
-import moe.fuqiuluo.shamrock.xposed.hooks.GuidLock
+import moe.qiufuluo.shamrock.tools.toHexString
+import moe.qiufuluo.shamrock.utils.MMKVFetcher
+import moe.qiufuluo.shamrock.xposed.hooks.GuidLock
 import mqq.app.MobileQQ
 import oicq.wlogin_sdk.tools.util
 

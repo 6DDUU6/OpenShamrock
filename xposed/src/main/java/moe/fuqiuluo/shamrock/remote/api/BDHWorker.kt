@@ -1,15 +1,15 @@
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
 import android.util.Base64
 import com.tencent.mobileqq.transfile.TransferRequest
 import com.tencent.mobileqq.transfile.api.ITransFileController
 import io.ktor.server.routing.Routing
 import io.ktor.server.routing.post
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.tools.fetchPost
-import moe.fuqiuluo.shamrock.tools.respond
-import moe.fuqiuluo.shamrock.utils.MD5
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.tools.fetchPost
+import moe.qiufuluo.shamrock.tools.respond
+import moe.qiufuluo.shamrock.utils.MD5
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
 import mqq.app.MobileQQ
 import kotlin.random.Random
 import kotlin.random.nextLong

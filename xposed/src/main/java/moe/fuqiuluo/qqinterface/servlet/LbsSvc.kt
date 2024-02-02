@@ -1,11 +1,11 @@
-package moe.fuqiuluo.qqinterface.servlet
+package moe.qiufuluo.qqinterface.servlet
 
 import com.tencent.biz.map.trpcprotocol.LbsSendInfo
 import com.tencent.mobileqq.msf.core.MsfCore
 import com.tencent.proto.lbsshare.LBSShare
 import com.tencent.qqnt.kernel.nativeinterface.MsgConstant
-import moe.fuqiuluo.shamrock.helper.IllegalParamsException
-import moe.fuqiuluo.shamrock.tools.slice
+import moe.qiufuluo.shamrock.helper.IllegalParamsException
+import moe.qiufuluo.shamrock.tools.slice
 import kotlin.math.roundToInt
 
 internal object LbsSvc: BaseSvc() {

@@ -1,5 +1,5 @@
 @file:Suppress("UNCHECKED_CAST", "LocalVariableName")
-package moe.fuqiuluo.shamrock.xposed.hooks
+package moe.qiufuluo.shamrock.xposed.hooks
 
 import android.content.Context
 import android.content.pm.PackageManager
@@ -9,15 +9,15 @@ import android.os.Looper
 import de.robv.android.xposed.XC_MethodReplacement
 import de.robv.android.xposed.XSharedPreferences
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.remote.service.config.ShamrockConfig
-import moe.fuqiuluo.shamrock.tools.MethodHooker
-import moe.fuqiuluo.shamrock.tools.hookMethod
-import moe.fuqiuluo.shamrock.xposed.XposedEntry
-import moe.fuqiuluo.shamrock.xposed.loader.LuoClassloader
-import moe.fuqiuluo.shamrock.xposed.loader.NativeLoader
-import moe.fuqiuluo.symbols.XposedHook
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.remote.service.config.ShamrockConfig
+import moe.qiufuluo.shamrock.tools.MethodHooker
+import moe.qiufuluo.shamrock.tools.hookMethod
+import moe.qiufuluo.shamrock.xposed.XposedEntry
+import moe.qiufuluo.shamrock.xposed.loader.LuoClassloader
+import moe.qiufuluo.shamrock.xposed.loader.NativeLoader
+import moe.qiufuluo.symbols.XposedHook
 
 @XposedHook(priority = 0)
 class AntiDetection: IAction {
@@ -32,7 +32,7 @@ class AntiDetection: IAction {
     }
 
     val isModuleStack = fun String.(): Boolean {
-        return contains("fuqiuluo") || contains("shamrock") || contains("whitechi") || contains("lsposed") || contains("xposed")
+        return contains("qiufuluo") || contains("shamrock") || contains("whitechi") || contains("lsposed") || contains("xposed")
     }
 
     private fun isModuleStack(): Boolean {
@@ -44,7 +44,7 @@ class AntiDetection: IAction {
 
     private fun antiNativeDetection() {
         try {
-            val pref = XSharedPreferences("moe.fuqiuluo.shamrock", "shared_config")
+            val pref = XSharedPreferences("moe.qiufuluo.shamrock", "shared_config")
             if (!pref.file.canRead()) {
                 LogCenter.log("[Shamrock] unable to load XSharedPreferences", Level.WARN)
                 return
@@ -70,15 +70,15 @@ class AntiDetection: IAction {
         if (isAntiFindPackage) return
 
         val packageManager = context.packageManager
-        val applicationInfo = packageManager.getApplicationInfo("moe.fuqiuluo.shamrock", 0)
-        val packageInfo = packageManager.getPackageInfo("moe.fuqiuluo.shamrock", 0)
+        val applicationInfo = packageManager.getApplicationInfo("moe.qiufuluo.shamrock", 0)
+        val packageInfo = packageManager.getPackageInfo("moe.qiufuluo.shamrock", 0)
 
         packageManager.javaClass.hookMethod("getApplicationInfo").before {
             val packageName = it.args[0] as String
-            if(packageName == "moe.fuqiuluo.shamrock") {
+            if(packageName == "moe.qiufuluo.shamrock") {
                 LogCenter.log("AntiDetection: 检测到对Shamrock的检测，欺骗PackageManager(GA)", Level.WARN)
                 it.throwable = PackageManager.NameNotFoundException("Hided")
-            } else if (packageName == "moe.fuqiuluo.shamrock.hided") {
+            } else if (packageName == "moe.qiufuluo.shamrock.hided") {
                 it.result = applicationInfo
             }
         }
@@ -86,16 +86,16 @@ class AntiDetection: IAction {
         packageManager.javaClass.hookMethod("getPackageInfo").before {
             when(val packageName = it.args[0]) {
                 is String -> {
-                    if(packageName == "moe.fuqiuluo.shamrock") {
+                    if(packageName == "moe.qiufuluo.shamrock") {
                         LogCenter.log("AntiDetection: 检测到对Shamrock的检测，欺骗PackageManager(GP)", Level.WARN)
                         it.throwable = PackageManager.NameNotFoundException()
-                    } else if (packageName == "moe.fuqiuluo.shamrock.hided") {
+                    } else if (packageName == "moe.qiufuluo.shamrock.hided") {
                         it.result = packageInfo
                     }
                 }
                 else -> {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && packageName is VersionedPackage) {
-                        if(packageName.packageName == "moe.fuqiuluo.shamrock") {
+                        if(packageName.packageName == "moe.qiufuluo.shamrock") {
                             LogCenter.log("AntiDetection: 检测到对Shamrock的检测，欺骗PackageManager(GPV)", Level.WARN)
                             it.throwable = PackageManager.NameNotFoundException()
                         }
@@ -200,7 +200,7 @@ class AntiDetection: IAction {
 
         Thread::class.java.hookMethod("getName").after {
             val result = it.result as String
-            if (result.contains("fuqiuluo") || result.contains("shamrock") || result.contains("whitechi")) {
+            if (result.contains("qiufuluo") || result.contains("shamrock") || result.contains("whitechi")) {
                 it.result = "android"
             }
         }

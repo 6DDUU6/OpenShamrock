@@ -1,8 +1,8 @@
-package moe.fuqiuluo.shamrock.remote.service.data.profile
+package moe.qiufuluo.shamrock.remote.service.data.profile
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import moe.fuqiuluo.shamrock.remote.service.data.VipInfo
+import moe.qiufuluo.shamrock.remote.service.data.VipInfo
 
 @Serializable
 data class ProfileCard(

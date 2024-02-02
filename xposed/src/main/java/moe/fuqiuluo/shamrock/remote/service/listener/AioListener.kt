@@ -1,23 +1,23 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 
-package moe.fuqiuluo.shamrock.remote.service.listener
+package moe.qiufuluo.shamrock.remote.service.listener
 
-import moe.fuqiuluo.shamrock.helper.MessageHelper
+import moe.qiufuluo.shamrock.helper.MessageHelper
 import com.tencent.qqnt.kernel.nativeinterface.*
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import moe.fuqiuluo.qqinterface.servlet.TicketSvc
-import moe.fuqiuluo.qqinterface.servlet.msg.convert.toCQCode
-import moe.fuqiuluo.qqinterface.servlet.transfile.RichProtoSvc
-import moe.fuqiuluo.shamrock.remote.service.config.ShamrockConfig
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.helper.db.MessageDB
-import moe.fuqiuluo.shamrock.remote.service.api.GlobalEventTransmitter
-import moe.fuqiuluo.shamrock.remote.service.api.RichMediaUploadHandler
-import moe.fuqiuluo.shamrock.remote.service.data.push.MessageTempSource
-import moe.fuqiuluo.shamrock.remote.service.data.push.PostType
+import moe.qiufuluo.qqinterface.servlet.TicketSvc
+import moe.qiufuluo.qqinterface.servlet.msg.convert.toCQCode
+import moe.qiufuluo.qqinterface.servlet.transfile.RichProtoSvc
+import moe.qiufuluo.shamrock.remote.service.config.ShamrockConfig
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.helper.db.MessageDB
+import moe.qiufuluo.shamrock.remote.service.api.GlobalEventTransmitter
+import moe.qiufuluo.shamrock.remote.service.api.RichMediaUploadHandler
+import moe.qiufuluo.shamrock.remote.service.data.push.MessageTempSource
+import moe.qiufuluo.shamrock.remote.service.data.push.PostType
 import java.util.ArrayList
 import java.util.Collections
 import kotlin.collections.HashMap

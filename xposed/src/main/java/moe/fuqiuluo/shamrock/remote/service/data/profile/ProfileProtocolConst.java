@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.service.data.profile;
+package moe.qiufuluo.shamrock.remote.service.data.profile;
 
 public interface ProfileProtocolConst {
     public static final String CMD_GET_PROFILE_DETAIL = "OidbSvc.0x480_9_IMCore";

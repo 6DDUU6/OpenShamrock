@@ -1,7 +1,7 @@
-package moe.fuqiuluo.shamrock.xposed.hooks
+package moe.qiufuluo.shamrock.xposed.hooks
 
 import android.content.Context
-import moe.fuqiuluo.symbols.XposedHook
+import moe.qiufuluo.symbols.XposedHook
 
 @XposedHook(priority = -1)
 internal class HookForDebug: IAction {

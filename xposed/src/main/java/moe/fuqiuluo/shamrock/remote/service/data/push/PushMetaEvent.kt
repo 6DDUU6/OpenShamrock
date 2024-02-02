@@ -1,8 +1,8 @@
-package moe.fuqiuluo.shamrock.remote.service.data.push
+package moe.qiufuluo.shamrock.remote.service.data.push
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import moe.fuqiuluo.shamrock.remote.service.data.BotStatus
+import moe.qiufuluo.shamrock.remote.service.data.BotStatus
 
 @Serializable
 internal enum class MetaEventType {

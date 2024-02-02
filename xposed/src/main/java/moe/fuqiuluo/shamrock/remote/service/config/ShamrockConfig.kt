@@ -1,13 +1,13 @@
-package moe.fuqiuluo.shamrock.remote.service.config
+package moe.qiufuluo.shamrock.remote.service.config
 
 import android.content.Intent
 import com.tencent.mmkv.MMKV
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.tools.GlobalJson5
-import moe.fuqiuluo.shamrock.utils.MMKVFetcher
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.tools.GlobalJson5
+import moe.qiufuluo.shamrock.utils.MMKVFetcher
 import mqq.app.MobileQQ
 import java.io.File
 

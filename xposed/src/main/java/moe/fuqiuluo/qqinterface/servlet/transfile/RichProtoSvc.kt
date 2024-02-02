@@ -1,4 +1,4 @@
-package moe.fuqiuluo.qqinterface.servlet.transfile
+package moe.qiufuluo.qqinterface.servlet.transfile
 
 import com.tencent.mobileqq.pb.ByteStringMicro
 import com.tencent.mobileqq.transfile.FileMsg
@@ -6,14 +6,14 @@ import com.tencent.mobileqq.transfile.api.IProtoReqManager
 import com.tencent.mobileqq.transfile.protohandler.RichProto
 import com.tencent.mobileqq.transfile.protohandler.RichProtoProc
 import kotlinx.coroutines.suspendCancellableCoroutine
-import moe.fuqiuluo.qqinterface.servlet.BaseSvc
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.tools.hex2ByteArray
-import moe.fuqiuluo.shamrock.tools.slice
-import moe.fuqiuluo.shamrock.tools.toHexString
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.qqinterface.servlet.BaseSvc
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.tools.hex2ByteArray
+import moe.qiufuluo.shamrock.tools.slice
+import moe.qiufuluo.shamrock.tools.toHexString
+import moe.qiufuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
 import mqq.app.MobileQQ
 import tencent.im.cs.cmd0x346.cmd0x346
 import tencent.im.oidb.cmd0x6d6.oidb_0x6d6

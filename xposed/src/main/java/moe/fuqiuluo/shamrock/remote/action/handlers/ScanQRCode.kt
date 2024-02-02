@@ -1,11 +1,11 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import android.util.Base64
 import com.tencent.mobileqq.qroute.QRoute
 import com.tencent.mobileqq.qrscan.api.IQRCodeApi
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("sanc_qrcode")
 internal object ScanQRCode: IActionHandler() {

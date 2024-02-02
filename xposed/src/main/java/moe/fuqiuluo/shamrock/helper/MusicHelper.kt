@@ -1,18 +1,18 @@
-package moe.fuqiuluo.shamrock.helper
+package moe.qiufuluo.shamrock.helper
 
 import io.ktor.client.request.get
 import io.ktor.client.statement.bodyAsText
 import kotlinx.serialization.json.Json
-import moe.fuqiuluo.qqinterface.servlet.ark.ArkAppInfo
-import moe.fuqiuluo.qqinterface.servlet.ark.ArkMsgSvc
-import moe.fuqiuluo.shamrock.tools.GlobalClient
-import moe.fuqiuluo.shamrock.tools.asInt
-import moe.fuqiuluo.shamrock.tools.asJsonArray
-import moe.fuqiuluo.shamrock.tools.asJsonArrayOrNull
-import moe.fuqiuluo.shamrock.tools.asJsonObject
-import moe.fuqiuluo.shamrock.tools.asString
-import moe.fuqiuluo.shamrock.tools.asStringOrNull
-import moe.fuqiuluo.shamrock.utils.MD5
+import moe.qiufuluo.qqinterface.servlet.ark.ArkAppInfo
+import moe.qiufuluo.qqinterface.servlet.ark.ArkMsgSvc
+import moe.qiufuluo.shamrock.tools.GlobalClient
+import moe.qiufuluo.shamrock.tools.asInt
+import moe.qiufuluo.shamrock.tools.asJsonArray
+import moe.qiufuluo.shamrock.tools.asJsonArrayOrNull
+import moe.qiufuluo.shamrock.tools.asJsonObject
+import moe.qiufuluo.shamrock.tools.asString
+import moe.qiufuluo.shamrock.tools.asStringOrNull
+import moe.qiufuluo.shamrock.utils.MD5
 
 internal object MusicHelper {
     suspend fun tryShare163MusicById(chatType: Int, peerId: Long, msgId: Long, id: String): Boolean {

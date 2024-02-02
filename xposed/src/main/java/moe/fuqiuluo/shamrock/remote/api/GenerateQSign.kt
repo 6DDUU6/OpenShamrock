@@ -1,6 +1,6 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
 import android.app.ActivityManager
 import android.content.ComponentName
@@ -27,21 +27,21 @@ import kotlinx.io.core.BytePacketBuilder
 import kotlinx.io.core.readBytes
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.tools.EMPTY_BYTE_ARRAY
-import moe.fuqiuluo.shamrock.tools.EmptyJsonObject
-import moe.fuqiuluo.shamrock.tools.fetchGetOrThrow
-import moe.fuqiuluo.shamrock.tools.fetchOrNull
-import moe.fuqiuluo.shamrock.tools.fetchOrThrow
-import moe.fuqiuluo.shamrock.tools.fetchPostOrThrow
-import moe.fuqiuluo.shamrock.tools.getOrPost
-import moe.fuqiuluo.shamrock.tools.hex2ByteArray
-import moe.fuqiuluo.shamrock.tools.json
-import moe.fuqiuluo.shamrock.tools.respond
-import moe.fuqiuluo.shamrock.tools.toHexString
-import moe.fuqiuluo.shamrock.xposed.ipc.ShamrockIpc
-import moe.fuqiuluo.shamrock.xposed.ipc.bytedata.IByteData
-import moe.fuqiuluo.shamrock.xposed.ipc.qsign.IQSigner
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.tools.EMPTY_BYTE_ARRAY
+import moe.qiufuluo.shamrock.tools.EmptyJsonObject
+import moe.qiufuluo.shamrock.tools.fetchGetOrThrow
+import moe.qiufuluo.shamrock.tools.fetchOrNull
+import moe.qiufuluo.shamrock.tools.fetchOrThrow
+import moe.qiufuluo.shamrock.tools.fetchPostOrThrow
+import moe.qiufuluo.shamrock.tools.getOrPost
+import moe.qiufuluo.shamrock.tools.hex2ByteArray
+import moe.qiufuluo.shamrock.tools.json
+import moe.qiufuluo.shamrock.tools.respond
+import moe.qiufuluo.shamrock.tools.toHexString
+import moe.qiufuluo.shamrock.xposed.ipc.ShamrockIpc
+import moe.qiufuluo.shamrock.xposed.ipc.bytedata.IByteData
+import moe.qiufuluo.shamrock.xposed.ipc.qsign.IQSigner
 import mqq.app.MobileQQ
 import java.nio.ByteBuffer
 

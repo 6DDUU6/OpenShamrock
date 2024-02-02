@@ -1,12 +1,12 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.qqinterface.servlet.CardSvc
-import moe.fuqiuluo.shamrock.tools.EmptyJsonString
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.qqinterface.servlet.CardSvc
+import moe.qiufuluo.shamrock.tools.EmptyJsonString
+import moe.qiufuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("_set_model_show")
 internal object SetModelShow : IActionHandler() {

@@ -16,7 +16,7 @@
 
 ## 简介
 
-☘ 基于 Lsposed(**Non**-Riru) 实现 OneBot 标准的 QQ 机器人框架，原作者[**fuqiuluo**](https://github.com/fuqiuluo)已脱离开发，接下来由白池接手哦！本项目为OpenShamrock，不会有任何收费行为，欢迎大家的加入！
+☘ 基于 Lsposed(**Non**-Riru) 实现 OneBot 标准的 QQ 机器人框架，原作者[**qiufuluo**](https://github.com/qiufuluo)已脱离开发，接下来由白池接手哦！本项目为OpenShamrock，不会有任何收费行为，欢迎大家的加入！
 
 > 本项目仅提供学习与交流用途，请在24小时内删除。   
 > 本项目目的是研究 Xposed 和 LSPosed 框架的使用。 Epic 框架开发相关知识。  
@@ -95,7 +95,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 [docs-link]: https://whitechi73.github.io/OpenShamrock/
 
-[hook-system]: https://github.com/whitechi73/OpenShamrock/blob/master/xposed/src/main/java/moe/fuqiuluo/shamrock/xposed/loader/KeepAlive.kt
+[hook-system]: https://github.com/whitechi73/OpenShamrock/blob/master/xposed/src/main/java/moe/qiufuluo/shamrock/xposed/loader/KeepAlive.kt
 
 [voice-support]: https://whitechi73.github.io/OpenShamrock/advanced/voice.html
 

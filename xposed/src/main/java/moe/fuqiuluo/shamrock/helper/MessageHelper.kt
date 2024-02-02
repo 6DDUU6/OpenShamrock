@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.helper
+package moe.qiufuluo.shamrock.helper
 
 import com.tencent.mobileqq.qroute.QRoute
 import com.tencent.qqnt.kernel.nativeinterface.Contact
@@ -15,17 +15,17 @@ import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.jsonObject
-import moe.fuqiuluo.qqinterface.servlet.MsgSvc
-import moe.fuqiuluo.qqinterface.servlet.msg.MessageMaker
-import moe.fuqiuluo.shamrock.helper.db.MessageDB
-import moe.fuqiuluo.shamrock.helper.db.MessageMapping
-import moe.fuqiuluo.shamrock.remote.structures.SendMsgResult
-import moe.fuqiuluo.shamrock.tools.EmptyJsonObject
-import moe.fuqiuluo.shamrock.tools.asJsonObject
-import moe.fuqiuluo.shamrock.tools.asJsonObjectOrNull
-import moe.fuqiuluo.shamrock.tools.asString
-import moe.fuqiuluo.shamrock.tools.json
-import moe.fuqiuluo.shamrock.tools.jsonArray
+import moe.qiufuluo.qqinterface.servlet.MsgSvc
+import moe.qiufuluo.qqinterface.servlet.msg.MessageMaker
+import moe.qiufuluo.shamrock.helper.db.MessageDB
+import moe.qiufuluo.shamrock.helper.db.MessageMapping
+import moe.qiufuluo.shamrock.remote.structures.SendMsgResult
+import moe.qiufuluo.shamrock.tools.EmptyJsonObject
+import moe.qiufuluo.shamrock.tools.asJsonObject
+import moe.qiufuluo.shamrock.tools.asJsonObjectOrNull
+import moe.qiufuluo.shamrock.tools.asString
+import moe.qiufuluo.shamrock.tools.json
+import moe.qiufuluo.shamrock.tools.jsonArray
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 import kotlin.math.abs

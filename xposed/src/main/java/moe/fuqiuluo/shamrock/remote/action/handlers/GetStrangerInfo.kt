@@ -1,15 +1,15 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import com.tencent.mobileqq.data.Card
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.tools.toHexString
-import moe.fuqiuluo.qqinterface.servlet.CardSvc
-import moe.fuqiuluo.shamrock.tools.EmptyJsonString
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.tools.toHexString
+import moe.qiufuluo.qqinterface.servlet.CardSvc
+import moe.qiufuluo.shamrock.tools.EmptyJsonString
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("get_stranger_info", ["_get_stranger_info"])
 internal object GetStrangerInfo: IActionHandler() {

@@ -1,7 +1,7 @@
 @file:OptIn(KspExperimental::class)
 @file:Suppress("LocalVariableName", "UNCHECKED_CAST")
 
-package moe.fuqiuluo.ksp.impl
+package moe.qiufuluo.ksp.impl
 
 import com.google.devtools.ksp.KspExperimental
 import com.google.devtools.ksp.getAnnotationsByType
@@ -18,14 +18,14 @@ import com.google.devtools.ksp.symbol.KSVisitorVoid
 import com.google.devtools.ksp.validate
 import com.squareup.kotlinpoet.FileSpec
 import com.squareup.kotlinpoet.FunSpec
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.symbols.OneBotHandler
 
 class OneBotHandlerProcessor(
     private val codeGenerator: CodeGenerator,
     private val logger: KSPLogger
 ): SymbolProcessor {
     override fun process(resolver: Resolver): List<KSAnnotated> {
-        val ActionManagerNode = resolver.getClassDeclarationByName("moe.fuqiuluo.shamrock.remote.action.ActionManager")
+        val ActionManagerNode = resolver.getClassDeclarationByName("moe.qiufuluo.shamrock.remote.action.ActionManager")
         if (ActionManagerNode == null) {
             logger.error("OneBotHandlerProcessor: ActionManager not found")
             return emptyList()
@@ -64,7 +64,7 @@ class OneBotHandlerProcessor(
                     addStatement("actionMap[\"$actionName\"] = ${handler.simpleName.asString()}")
                 }
             }.build()).apply {
-                addImport("moe.fuqiuluo.shamrock.remote.action.ActionManager", "actionMap")
+                addImport("moe.qiufuluo.shamrock.remote.action.ActionManager", "actionMap")
                 actionHandlers.forEach {
                     addImport(it.packageName.asString(), it.simpleName.asString())
                 }

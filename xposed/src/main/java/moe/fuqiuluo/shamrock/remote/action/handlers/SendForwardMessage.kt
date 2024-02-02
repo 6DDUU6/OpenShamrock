@@ -1,21 +1,21 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import com.tencent.qqnt.kernel.nativeinterface.MsgConstant
 import com.tencent.qqnt.kernel.nativeinterface.MultiMsgInfo
 import kotlinx.serialization.json.*
-import moe.fuqiuluo.qqinterface.servlet.MsgSvc
-import moe.fuqiuluo.qqinterface.servlet.TicketSvc
-import moe.fuqiuluo.qqinterface.servlet.msg.convert.toSegments
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.helper.MessageHelper
-import moe.fuqiuluo.shamrock.helper.ParamsException
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.remote.service.data.ForwardMessageResult
-import moe.fuqiuluo.shamrock.tools.*
-import moe.fuqiuluo.shamrock.xposed.helper.NTServiceFetcher
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.qqinterface.servlet.MsgSvc
+import moe.qiufuluo.qqinterface.servlet.TicketSvc
+import moe.qiufuluo.qqinterface.servlet.msg.convert.toSegments
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.helper.MessageHelper
+import moe.qiufuluo.shamrock.helper.ParamsException
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.remote.service.data.ForwardMessageResult
+import moe.qiufuluo.shamrock.tools.*
+import moe.qiufuluo.shamrock.xposed.helper.NTServiceFetcher
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("send_forward_msg")
 internal object SendForwardMessage : IActionHandler() {

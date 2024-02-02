@@ -1,5 +1,5 @@
 @file:Suppress("UNUSED_VARIABLE", "LocalVariableName")
-package moe.fuqiuluo.shamrock.xposed.loader
+package moe.qiufuluo.shamrock.xposed.loader
 
 import android.content.pm.ApplicationInfo
 import android.os.Build
@@ -7,13 +7,13 @@ import android.os.Process
 import de.robv.android.xposed.XSharedPreferences
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.shamrock.tools.hookMethod
+import moe.qiufuluo.shamrock.tools.hookMethod
 import java.lang.reflect.Method
 import kotlin.concurrent.timer
 
 internal object KeepAlive {
     private val KeepPackage = arrayOf(
-        "com.tencent.mobileqq", "moe.fuqiuluo.shamrock"
+        "com.tencent.mobileqq", "moe.qiufuluo.shamrock"
     )
     private val KeepRecords = arrayListOf<Any>()
     private lateinit var KeepThread: Thread
@@ -22,7 +22,7 @@ internal object KeepAlive {
     private var allowPersistent: Boolean = false
 
     operator fun invoke(loader: ClassLoader) {
-        val pref = XSharedPreferences("moe.fuqiuluo.shamrock", "shared_config")
+        val pref = XSharedPreferences("moe.qiufuluo.shamrock", "shared_config")
         hookAMS(pref, loader)
         hookDoze(pref, loader)
     }

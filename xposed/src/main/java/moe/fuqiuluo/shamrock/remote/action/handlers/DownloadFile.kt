@@ -1,17 +1,17 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import android.util.Base64
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.tools.EmptyJsonObject
-import moe.fuqiuluo.shamrock.tools.EmptyJsonString
-import moe.fuqiuluo.shamrock.tools.asString
-import moe.fuqiuluo.shamrock.utils.DownloadUtils
-import moe.fuqiuluo.shamrock.utils.FileUtils
-import moe.fuqiuluo.shamrock.utils.MD5
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.tools.EmptyJsonObject
+import moe.qiufuluo.shamrock.tools.EmptyJsonString
+import moe.qiufuluo.shamrock.tools.asString
+import moe.qiufuluo.shamrock.utils.DownloadUtils
+import moe.qiufuluo.shamrock.utils.FileUtils
+import moe.qiufuluo.shamrock.utils.MD5
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("download_file")
 internal object DownloadFile: IActionHandler() {

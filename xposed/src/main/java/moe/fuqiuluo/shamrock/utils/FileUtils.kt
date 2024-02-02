@@ -1,12 +1,12 @@
-package moe.fuqiuluo.shamrock.utils
+package moe.qiufuluo.shamrock.utils
 
 import android.util.Base64
 import io.ktor.util.cio.writeChannel
 import io.ktor.utils.io.ByteReadChannel
 import io.ktor.utils.io.copyTo
-import moe.fuqiuluo.shamrock.utils.MD5.genFileMd5Hex
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.utils.MD5.genFileMd5Hex
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
 import mqq.app.MobileQQ
 import java.io.ByteArrayInputStream
 import java.io.File

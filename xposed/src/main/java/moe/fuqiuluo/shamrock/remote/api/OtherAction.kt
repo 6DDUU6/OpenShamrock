@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
 import io.ktor.http.ContentType
 import io.ktor.http.content.PartData
@@ -13,23 +13,23 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.serialization.json.JsonObject
-import moe.fuqiuluo.shamrock.remote.action.handlers.CleanCache
-import moe.fuqiuluo.shamrock.remote.action.handlers.DownloadFile
-import moe.fuqiuluo.shamrock.remote.action.handlers.GetDeviceBattery
-import moe.fuqiuluo.shamrock.remote.action.handlers.GetVersionInfo
-import moe.fuqiuluo.shamrock.remote.action.handlers.RestartMe
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.remote.service.config.ShamrockConfig
-import moe.fuqiuluo.shamrock.tools.asString
-import moe.fuqiuluo.shamrock.tools.fetchOrNull
-import moe.fuqiuluo.shamrock.tools.fetchOrThrow
-import moe.fuqiuluo.shamrock.tools.fetchPostJsonArray
-import moe.fuqiuluo.shamrock.tools.getOrPost
-import moe.fuqiuluo.shamrock.tools.isJsonArray
-import moe.fuqiuluo.shamrock.tools.json
-import moe.fuqiuluo.shamrock.tools.respond
-import moe.fuqiuluo.shamrock.utils.FileUtils
-import moe.fuqiuluo.shamrock.utils.MD5
+import moe.qiufuluo.shamrock.remote.action.handlers.CleanCache
+import moe.qiufuluo.shamrock.remote.action.handlers.DownloadFile
+import moe.qiufuluo.shamrock.remote.action.handlers.GetDeviceBattery
+import moe.qiufuluo.shamrock.remote.action.handlers.GetVersionInfo
+import moe.qiufuluo.shamrock.remote.action.handlers.RestartMe
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.remote.service.config.ShamrockConfig
+import moe.qiufuluo.shamrock.tools.asString
+import moe.qiufuluo.shamrock.tools.fetchOrNull
+import moe.qiufuluo.shamrock.tools.fetchOrThrow
+import moe.qiufuluo.shamrock.tools.fetchPostJsonArray
+import moe.qiufuluo.shamrock.tools.getOrPost
+import moe.qiufuluo.shamrock.tools.isJsonArray
+import moe.qiufuluo.shamrock.tools.json
+import moe.qiufuluo.shamrock.tools.respond
+import moe.qiufuluo.shamrock.utils.FileUtils
+import moe.qiufuluo.shamrock.utils.MD5
 import java.io.File
 
 fun Routing.otherAction() {

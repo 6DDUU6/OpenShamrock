@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -17,16 +17,16 @@ import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.helper.MessageHelper
-import moe.fuqiuluo.shamrock.helper.TransfileHelper
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.remote.service.api.RichMediaUploadHandler
-import moe.fuqiuluo.shamrock.tools.EmptyJsonString
-import moe.fuqiuluo.shamrock.utils.FileUtils
-import moe.fuqiuluo.shamrock.utils.MD5
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.helper.MessageHelper
+import moe.qiufuluo.shamrock.helper.TransfileHelper
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.remote.service.api.RichMediaUploadHandler
+import moe.qiufuluo.shamrock.tools.EmptyJsonString
+import moe.qiufuluo.shamrock.utils.FileUtils
+import moe.qiufuluo.shamrock.utils.MD5
+import moe.qiufuluo.symbols.OneBotHandler
 import java.io.File
 import java.io.FileOutputStream
 import kotlin.coroutines.resume

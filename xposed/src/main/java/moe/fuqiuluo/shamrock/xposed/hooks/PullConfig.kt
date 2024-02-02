@@ -1,21 +1,21 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 
-package moe.fuqiuluo.shamrock.xposed.hooks
+package moe.qiufuluo.shamrock.xposed.hooks
 
 import android.content.Context
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import moe.fuqiuluo.shamrock.remote.HTTPServer
-import moe.fuqiuluo.shamrock.remote.service.config.ShamrockConfig
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
-import moe.fuqiuluo.shamrock.xposed.helper.internal.DataRequester
-import moe.fuqiuluo.shamrock.xposed.helper.internal.DynamicReceiver
-import moe.fuqiuluo.shamrock.xposed.helper.internal.IPCRequest
-import moe.fuqiuluo.shamrock.xposed.loader.NativeLoader
-import moe.fuqiuluo.symbols.Process
-import moe.fuqiuluo.symbols.XposedHook
+import moe.qiufuluo.shamrock.remote.HTTPServer
+import moe.qiufuluo.shamrock.remote.service.config.ShamrockConfig
+import moe.qiufuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.xposed.helper.internal.DataRequester
+import moe.qiufuluo.shamrock.xposed.helper.internal.DynamicReceiver
+import moe.qiufuluo.shamrock.xposed.helper.internal.IPCRequest
+import moe.qiufuluo.shamrock.xposed.loader.NativeLoader
+import moe.qiufuluo.symbols.Process
+import moe.qiufuluo.symbols.XposedHook
 import mqq.app.MobileQQ
 import kotlin.concurrent.thread
 import kotlin.system.exitProcess

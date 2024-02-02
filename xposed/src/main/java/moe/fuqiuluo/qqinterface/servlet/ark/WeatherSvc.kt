@@ -1,4 +1,4 @@
-package moe.fuqiuluo.qqinterface.servlet.ark
+package moe.qiufuluo.qqinterface.servlet.ark
 
 import io.ktor.client.request.get
 import io.ktor.client.request.header
@@ -9,10 +9,10 @@ import io.ktor.http.encodeURLQueryComponent
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
-import moe.fuqiuluo.qqinterface.servlet.TicketSvc
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.tools.*
+import moe.qiufuluo.qqinterface.servlet.TicketSvc
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.tools.*
 import java.lang.Exception
 
 @Serializable

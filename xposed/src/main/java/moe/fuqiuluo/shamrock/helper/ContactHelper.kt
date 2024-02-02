@@ -1,10 +1,10 @@
-package moe.fuqiuluo.shamrock.helper
+package moe.qiufuluo.shamrock.helper
 
 import com.tencent.qqnt.kernel.nativeinterface.MsgConstant
 import kotlinx.coroutines.suspendCancellableCoroutine
-import moe.fuqiuluo.qqinterface.servlet.FriendSvc
-import moe.fuqiuluo.qqinterface.servlet.GroupSvc
-import moe.fuqiuluo.shamrock.xposed.helper.NTServiceFetcher
+import moe.qiufuluo.qqinterface.servlet.FriendSvc
+import moe.qiufuluo.qqinterface.servlet.GroupSvc
+import moe.qiufuluo.shamrock.xposed.helper.NTServiceFetcher
 import kotlin.coroutines.resume
 
 internal object ContactHelper {

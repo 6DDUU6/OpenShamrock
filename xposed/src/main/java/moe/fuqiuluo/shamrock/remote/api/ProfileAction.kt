@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
 import com.tencent.mobileqq.app.QQAppInterface
 import io.ktor.http.ContentType
@@ -6,14 +6,14 @@ import io.ktor.server.application.call
 import io.ktor.server.response.respond
 import io.ktor.server.response.respondText
 import io.ktor.server.routing.Routing
-import moe.fuqiuluo.shamrock.remote.action.ActionManager
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.handlers.GetLoginInfo
-import moe.fuqiuluo.shamrock.remote.structures.CommonResult
-import moe.fuqiuluo.shamrock.remote.structures.CurrentAccount
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.tools.*
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.shamrock.remote.action.ActionManager
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.handlers.GetLoginInfo
+import moe.qiufuluo.shamrock.remote.structures.CommonResult
+import moe.qiufuluo.shamrock.remote.structures.CurrentAccount
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.tools.*
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
 import mqq.app.MobileQQ
 
 fun Routing.profileRouter() {

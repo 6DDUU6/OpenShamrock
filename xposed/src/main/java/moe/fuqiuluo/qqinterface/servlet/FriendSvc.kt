@@ -1,6 +1,6 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 @file:Suppress("IllegalIdentifier")
-package moe.fuqiuluo.qqinterface.servlet
+package moe.qiufuluo.qqinterface.servlet
 
 import com.tencent.common.app.AppInterface
 import com.tencent.mobileqq.data.Friends
@@ -13,8 +13,8 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.suspendCancellableCoroutine
-import moe.fuqiuluo.shamrock.tools.slice
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.shamrock.tools.slice
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
 import mqq.app.AppRuntime
 import tencent.mobileim.structmsg.structmsg
 import kotlin.coroutines.resume

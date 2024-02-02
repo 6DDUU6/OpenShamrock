@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.tools
+package moe.qiufuluo.shamrock.tools
 
 import com.tencent.mobileqq.pb.MessageMicro
 import com.tencent.mobileqq.pb.PBBoolField
@@ -13,7 +13,7 @@ import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XC_MethodHook.MethodHookParam
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.callbacks.XCallback
-import moe.fuqiuluo.shamrock.xposed.loader.LuoClassloader
+import moe.qiufuluo.shamrock.xposed.loader.LuoClassloader
 import java.lang.reflect.Field
 import java.lang.reflect.Method
 import java.lang.reflect.Modifier

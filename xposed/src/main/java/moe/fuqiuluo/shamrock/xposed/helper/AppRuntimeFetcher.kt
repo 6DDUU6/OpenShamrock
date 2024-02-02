@@ -1,6 +1,6 @@
-package moe.fuqiuluo.shamrock.xposed.helper
+package moe.qiufuluo.shamrock.xposed.helper
 
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.utils.PlatformUtils
 import mqq.app.AppRuntime
 import mqq.app.MobileQQ
 

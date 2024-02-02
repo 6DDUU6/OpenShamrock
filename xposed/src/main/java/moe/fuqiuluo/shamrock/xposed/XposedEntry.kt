@@ -1,17 +1,17 @@
-package moe.fuqiuluo.shamrock.xposed
+package moe.qiufuluo.shamrock.xposed
 
 import android.content.Context
 import de.robv.android.xposed.IXposedHookLoadPackage
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.callbacks.XC_LoadPackage
 import de.robv.android.xposed.XposedBridge.log
-import moe.fuqiuluo.shamrock.utils.MMKVFetcher
-import moe.fuqiuluo.shamrock.xposed.loader.KeepAlive
-import moe.fuqiuluo.shamrock.xposed.loader.LuoClassloader
-import moe.fuqiuluo.shamrock.tools.FuzzySearchClass
-import moe.fuqiuluo.shamrock.tools.afterHook
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
-import moe.fuqiuluo.shamrock.xposed.hooks.runFirstActions
+import moe.qiufuluo.shamrock.utils.MMKVFetcher
+import moe.qiufuluo.shamrock.xposed.loader.KeepAlive
+import moe.qiufuluo.shamrock.xposed.loader.LuoClassloader
+import moe.qiufuluo.shamrock.tools.FuzzySearchClass
+import moe.qiufuluo.shamrock.tools.afterHook
+import moe.qiufuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.xposed.hooks.runFirstActions
 import mqq.app.MobileQQ
 import java.lang.reflect.Field
 import java.lang.reflect.Modifier

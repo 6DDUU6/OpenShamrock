@@ -1,6 +1,6 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 
-package moe.fuqiuluo.shamrock.helper
+package moe.qiufuluo.shamrock.helper
 
 import android.annotation.SuppressLint
 import android.icu.text.SimpleDateFormat
@@ -8,9 +8,9 @@ import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import moe.fuqiuluo.shamrock.remote.service.config.ShamrockConfig
-import moe.fuqiuluo.shamrock.xposed.hooks.toast
-import moe.fuqiuluo.shamrock.xposed.helper.internal.DataRequester
+import moe.qiufuluo.shamrock.remote.service.config.ShamrockConfig
+import moe.qiufuluo.shamrock.xposed.hooks.toast
+import moe.qiufuluo.shamrock.xposed.helper.internal.DataRequester
 import mqq.app.MobileQQ
 import java.io.File
 import java.util.Date

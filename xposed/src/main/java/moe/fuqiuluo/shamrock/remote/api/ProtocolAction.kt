@@ -1,14 +1,14 @@
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
 import com.tencent.mobileqq.dt.model.FEBound
 import io.ktor.server.routing.Routing
-import moe.fuqiuluo.qqinterface.servlet.BaseSvc
-import moe.fuqiuluo.shamrock.remote.structures.Protocol
-import moe.fuqiuluo.shamrock.remote.structures.QSignDtConfig
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.tools.*
-import moe.fuqiuluo.shamrock.utils.MMKVFetcher
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.qqinterface.servlet.BaseSvc
+import moe.qiufuluo.shamrock.remote.structures.Protocol
+import moe.qiufuluo.shamrock.remote.structures.QSignDtConfig
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.tools.*
+import moe.qiufuluo.shamrock.utils.MMKVFetcher
+import moe.qiufuluo.shamrock.utils.PlatformUtils
 import mqq.app.MobileQQ
 import oicq.wlogin_sdk.tlv_type.tlv_t100
 import oicq.wlogin_sdk.tlv_type.tlv_t106

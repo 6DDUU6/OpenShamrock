@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.config
+package moe.qiufuluo.shamrock.remote.config
 
 import io.ktor.serialization.kotlinx.json.json
 import io.ktor.server.application.Application

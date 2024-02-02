@@ -1,9 +1,9 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers;
+package moe.qiufuluo.shamrock.remote.action.handlers;
 
 import com.tencent.qqnt.kernel.nativeinterface.MsgConstant
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("send_private_forward_msg")
 internal object SendPrivateForwardMessage : IActionHandler() {

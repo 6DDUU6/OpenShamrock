@@ -1,8 +1,8 @@
-package moe.fuqiuluo.shamrock.remote.service.listener
+package moe.qiufuluo.shamrock.remote.service.listener
 
 import com.tencent.qqnt.kernel.nativeinterface.IQQNTWrapperNetworkListener
 import com.tencent.qqnt.kernel.nativeinterface.NetStatusType
-import moe.fuqiuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.helper.LogCenter
 
 internal object NetworkListener: IQQNTWrapperNetworkListener {
     override fun onNetworkStatusChanged(o: NetStatusType, n: NetStatusType) {

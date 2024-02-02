@@ -1,16 +1,16 @@
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
 import io.ktor.http.ContentType
 import io.ktor.server.application.call
 import io.ktor.server.response.respondText
 import io.ktor.server.routing.Routing
-import moe.fuqiuluo.shamrock.remote.action.handlers.FavAddImageMsg
-import moe.fuqiuluo.shamrock.remote.action.handlers.FavAddTextMsg
-import moe.fuqiuluo.shamrock.remote.action.handlers.FavGetItemContent
-import moe.fuqiuluo.shamrock.remote.action.handlers.FavGetItemList
-import moe.fuqiuluo.shamrock.tools.fetchOrNull
-import moe.fuqiuluo.shamrock.tools.fetchOrThrow
-import moe.fuqiuluo.shamrock.tools.getOrPost
+import moe.qiufuluo.shamrock.remote.action.handlers.FavAddImageMsg
+import moe.qiufuluo.shamrock.remote.action.handlers.FavAddTextMsg
+import moe.qiufuluo.shamrock.remote.action.handlers.FavGetItemContent
+import moe.qiufuluo.shamrock.remote.action.handlers.FavGetItemList
+import moe.qiufuluo.shamrock.tools.fetchOrNull
+import moe.qiufuluo.shamrock.tools.fetchOrThrow
+import moe.qiufuluo.shamrock.tools.getOrPost
 
 // fav.add_rich_media_msg
 

@@ -1,6 +1,6 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 
-package moe.fuqiuluo.qqinterface.servlet
+package moe.qiufuluo.qqinterface.servlet
 
 import android.os.Bundle
 import com.tencent.mobileqq.app.QQAppInterface
@@ -15,10 +15,10 @@ import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.serialization.encodeToByteArray
 import kotlinx.serialization.protobuf.ProtoBuf
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
-import moe.fuqiuluo.shamrock.xposed.helper.internal.DynamicReceiver
-import moe.fuqiuluo.shamrock.xposed.helper.internal.IPCRequest
+import moe.qiufuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.shamrock.xposed.helper.internal.DynamicReceiver
+import moe.qiufuluo.shamrock.xposed.helper.internal.IPCRequest
 import moe.whitechi73.protobuf.oidb.TrpcOidb
 import mqq.app.MobileQQ
 import tencent.im.oidb.oidb_sso

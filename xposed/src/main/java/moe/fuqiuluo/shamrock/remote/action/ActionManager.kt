@@ -1,14 +1,14 @@
-package moe.fuqiuluo.shamrock.remote.action
+package moe.qiufuluo.shamrock.remote.action
 
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.JsonPrimitive
-import moe.fuqiuluo.shamrock.remote.structures.EmptyObject
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.remote.structures.resultToString
-import moe.fuqiuluo.shamrock.tools.*
-import moe.fuqiuluo.shamrock.tools.json
+import moe.qiufuluo.shamrock.remote.structures.EmptyObject
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.remote.structures.resultToString
+import moe.qiufuluo.shamrock.tools.*
+import moe.qiufuluo.shamrock.tools.json
 
 internal object ActionManager {
     val actionMap = mutableMapOf<String, IActionHandler>()

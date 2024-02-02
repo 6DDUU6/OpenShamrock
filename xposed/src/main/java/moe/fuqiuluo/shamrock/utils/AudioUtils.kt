@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.utils
+package moe.qiufuluo.shamrock.utils
 
 import android.graphics.Bitmap
 import android.media.MediaExtractor
@@ -8,9 +8,9 @@ import com.arthenica.ffmpegkit.FFmpegKit
 import com.arthenica.ffmpegkit.FFprobeKit
 import com.arthenica.ffmpegkit.ReturnCode
 import com.tencent.qqnt.kernel.nativeinterface.QQNTWrapperUtil
-import moe.fuqiuluo.shamrock.helper.LocalCacheHelper
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.helper.LocalCacheHelper
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
 import java.io.File
 import java.io.FileOutputStream
 import kotlin.math.roundToInt

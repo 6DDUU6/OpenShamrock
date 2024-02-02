@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.utils
+package moe.qiufuluo.shamrock.utils
 
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream

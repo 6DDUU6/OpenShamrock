@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.xposed.loader
+package moe.qiufuluo.shamrock.xposed.loader
 
 object LuoClassloader: ClassLoader() {
     lateinit var hostClassLoader: ClassLoader

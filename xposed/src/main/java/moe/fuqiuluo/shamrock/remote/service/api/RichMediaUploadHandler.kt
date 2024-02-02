@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.service.api
+package moe.qiufuluo.shamrock.remote.service.api
 
 import com.tencent.qqnt.kernel.nativeinterface.FileTransNotifyInfo
 

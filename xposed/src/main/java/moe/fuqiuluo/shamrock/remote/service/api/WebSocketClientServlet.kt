@@ -1,6 +1,6 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 
-package moe.fuqiuluo.shamrock.remote.service.api
+package moe.qiufuluo.shamrock.remote.service.api
 
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
@@ -9,22 +9,22 @@ import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
-import moe.fuqiuluo.shamrock.remote.action.ActionManager
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.structures.EmptyObject
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.remote.structures.resultToString
-import moe.fuqiuluo.shamrock.remote.service.config.ShamrockConfig
-import moe.fuqiuluo.shamrock.tools.*
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.remote.service.data.BotStatus
-import moe.fuqiuluo.shamrock.remote.service.data.Self
-import moe.fuqiuluo.shamrock.remote.service.data.push.MetaEventType
-import moe.fuqiuluo.shamrock.remote.service.data.push.MetaSubType
-import moe.fuqiuluo.shamrock.remote.service.data.push.PostType
-import moe.fuqiuluo.shamrock.remote.service.data.push.PushMetaEvent
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.shamrock.remote.action.ActionManager
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.structures.EmptyObject
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.remote.structures.resultToString
+import moe.qiufuluo.shamrock.remote.service.config.ShamrockConfig
+import moe.qiufuluo.shamrock.tools.*
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.remote.service.data.BotStatus
+import moe.qiufuluo.shamrock.remote.service.data.Self
+import moe.qiufuluo.shamrock.remote.service.data.push.MetaEventType
+import moe.qiufuluo.shamrock.remote.service.data.push.MetaSubType
+import moe.qiufuluo.shamrock.remote.service.data.push.PostType
+import moe.qiufuluo.shamrock.remote.service.data.push.PushMetaEvent
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
 import org.java_websocket.client.WebSocketClient
 import org.java_websocket.handshake.ServerHandshake
 import java.lang.Exception

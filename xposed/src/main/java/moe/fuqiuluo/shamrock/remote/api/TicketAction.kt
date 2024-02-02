@@ -1,13 +1,13 @@
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
 import io.ktor.http.ContentType
-import moe.fuqiuluo.qqinterface.servlet.TicketSvc
+import moe.qiufuluo.qqinterface.servlet.TicketSvc
 import io.ktor.server.application.call
 import io.ktor.server.response.respondText
 import io.ktor.server.routing.Routing
-import moe.fuqiuluo.shamrock.remote.action.handlers.*
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.tools.*
+import moe.qiufuluo.shamrock.remote.action.handlers.*
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.tools.*
 
 fun Routing.ticketActions() {
     getOrPost("/get_http_cookies") {

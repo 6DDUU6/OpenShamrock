@@ -1,22 +1,22 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 
-package moe.fuqiuluo.shamrock.remote.service
+package moe.qiufuluo.shamrock.remote.service
 
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-import moe.fuqiuluo.shamrock.helper.ErrorTokenException
-import moe.fuqiuluo.shamrock.remote.service.api.WebSocketTransmitServlet
-import moe.fuqiuluo.shamrock.remote.service.config.ShamrockConfig
-import moe.fuqiuluo.shamrock.remote.service.data.BotStatus
-import moe.fuqiuluo.shamrock.remote.service.data.Self
-import moe.fuqiuluo.shamrock.remote.service.data.push.*
-import moe.fuqiuluo.shamrock.tools.ifNullOrEmpty
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.remote.service.api.GlobalEventTransmitter
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.shamrock.helper.ErrorTokenException
+import moe.qiufuluo.shamrock.remote.service.api.WebSocketTransmitServlet
+import moe.qiufuluo.shamrock.remote.service.config.ShamrockConfig
+import moe.qiufuluo.shamrock.remote.service.data.BotStatus
+import moe.qiufuluo.shamrock.remote.service.data.Self
+import moe.qiufuluo.shamrock.remote.service.data.push.*
+import moe.qiufuluo.shamrock.tools.ifNullOrEmpty
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.remote.service.api.GlobalEventTransmitter
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
 import org.java_websocket.WebSocket
 import org.java_websocket.handshake.ClientHandshake
 import java.net.URI

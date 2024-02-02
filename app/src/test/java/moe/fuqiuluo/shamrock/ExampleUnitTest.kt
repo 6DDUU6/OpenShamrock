@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock
+package moe.qiufuluo.shamrock
 
 import org.junit.Test
 

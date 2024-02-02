@@ -1,4 +1,4 @@
-package moe.fuqiuluo.qqinterface.servlet
+package moe.qiufuluo.qqinterface.servlet
 
 import com.tencent.mobileqq.msf.core.MsfCore
 import com.tencent.qqnt.kernel.nativeinterface.Contact
@@ -12,10 +12,10 @@ import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.serialization.encodeToByteArray
 import kotlinx.serialization.protobuf.ProtoBuf
-import moe.fuqiuluo.shamrock.remote.action.handlers.GetHistoryMsg
-import moe.fuqiuluo.shamrock.remote.service.listener.AioListener
-import moe.fuqiuluo.shamrock.tools.broadcast
-import moe.fuqiuluo.shamrock.utils.DeflateTools
+import moe.qiufuluo.shamrock.remote.action.handlers.GetHistoryMsg
+import moe.qiufuluo.shamrock.remote.service.listener.AioListener
+import moe.qiufuluo.shamrock.tools.broadcast
+import moe.qiufuluo.shamrock.utils.DeflateTools
 import moe.whitechi73.protobuf.message.JsonElement
 import moe.whitechi73.protobuf.message.MessageBody
 import moe.whitechi73.protobuf.message.MessageContentHead

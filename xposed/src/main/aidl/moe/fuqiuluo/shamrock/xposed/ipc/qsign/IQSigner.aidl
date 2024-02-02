@@ -1,7 +1,7 @@
 // IQSigner.aidl
-package moe.fuqiuluo.shamrock.xposed.ipc.qsign;
+package moe.qiufuluo.shamrock.xposed.ipc.qsign;
 
-import moe.fuqiuluo.shamrock.xposed.ipc.qsign.IQSign;
+import moe.qiufuluo.shamrock.xposed.ipc.qsign.IQSign;
 
 interface IQSigner {
     IQSign sign(String cmd, int seq, String uin, in byte[] buffer);

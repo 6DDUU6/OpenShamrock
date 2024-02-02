@@ -1,16 +1,16 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import com.tencent.mobileqq.data.Card
-import moe.fuqiuluo.qqinterface.servlet.CardSvc
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.remote.structures.resultToString
-import moe.fuqiuluo.shamrock.remote.service.data.VipInfo
-import moe.fuqiuluo.shamrock.remote.service.data.VipType
-import moe.fuqiuluo.shamrock.remote.service.data.profile.Location
-import moe.fuqiuluo.shamrock.remote.service.data.profile.ProfileCard
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.qqinterface.servlet.CardSvc
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.remote.structures.resultToString
+import moe.qiufuluo.shamrock.remote.service.data.VipInfo
+import moe.qiufuluo.shamrock.remote.service.data.VipType
+import moe.qiufuluo.shamrock.remote.service.data.profile.Location
+import moe.qiufuluo.shamrock.remote.service.data.profile.ProfileCard
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("get_user_info",  ["get_profile_card"])
 internal object GetProfileCard: IActionHandler() {

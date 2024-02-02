@@ -1,10 +1,10 @@
-package moe.fuqiuluo.shamrock.remote.plugin
+package moe.qiufuluo.shamrock.remote.plugin
 
 import io.ktor.server.application.ApplicationCall
-import moe.fuqiuluo.shamrock.helper.ErrorTokenException
+import moe.qiufuluo.shamrock.helper.ErrorTokenException
 import io.ktor.server.application.createApplicationPlugin
-import moe.fuqiuluo.shamrock.remote.service.config.ShamrockConfig
-import moe.fuqiuluo.shamrock.tools.fetchOrNull
+import moe.qiufuluo.shamrock.remote.service.config.ShamrockConfig
+import moe.qiufuluo.shamrock.tools.fetchOrNull
 import java.net.URLDecoder
 import java.nio.charset.Charset
 

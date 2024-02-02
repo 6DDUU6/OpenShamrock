@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.helper
+package moe.qiufuluo.shamrock.helper
 
 import java.io.File
 

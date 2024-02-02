@@ -1,6 +1,6 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 
-package moe.fuqiuluo.qqinterface.servlet.transfile
+package moe.qiufuluo.qqinterface.servlet.transfile
 
 import com.tencent.mobileqq.transfile.FileMsg
 import com.tencent.mobileqq.transfile.TransferRequest
@@ -11,8 +11,8 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withTimeoutOrNull
-import moe.fuqiuluo.shamrock.utils.MD5
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.shamrock.utils.MD5
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
 import mqq.app.AppRuntime
 import mqq.app.MobileQQ
 import java.io.File

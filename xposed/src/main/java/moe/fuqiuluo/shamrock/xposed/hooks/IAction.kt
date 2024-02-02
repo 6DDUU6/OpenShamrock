@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.xposed.hooks
+package moe.qiufuluo.shamrock.xposed.hooks
 
 import android.content.Context
 

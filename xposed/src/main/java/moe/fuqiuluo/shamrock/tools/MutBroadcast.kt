@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.tools
+package moe.qiufuluo.shamrock.tools
 
 import android.content.Context
 import android.content.Intent
@@ -8,7 +8,7 @@ import android.content.Intent
  */
 internal fun Context.broadcast(processName: String, intentBuilder: Intent.() -> Unit) {
     val intent = Intent()
-    intent.action = "moe.fuqiuluo.$processName.dynamic"
+    intent.action = "moe.qiufuluo.$processName.dynamic"
     intent.intentBuilder()
     sendBroadcast(intent)
 }

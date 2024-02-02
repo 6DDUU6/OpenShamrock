@@ -1,14 +1,14 @@
-package moe.fuqiuluo.shamrock.xposed.hooks
+package moe.qiufuluo.shamrock.xposed.hooks
 
 import android.content.Context
 import com.tencent.beacon.event.open.BeaconReport
 import com.tencent.mobileqq.qsec.qsecurity.QSecConfig
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.tools.hex2ByteArray
-import moe.fuqiuluo.shamrock.tools.hookMethod
-import moe.fuqiuluo.shamrock.utils.MMKVFetcher
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
-import moe.fuqiuluo.symbols.XposedHook
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.tools.hex2ByteArray
+import moe.qiufuluo.shamrock.tools.hookMethod
+import moe.qiufuluo.shamrock.utils.MMKVFetcher
+import moe.qiufuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.symbols.XposedHook
 import oicq.wlogin_sdk.tools.util
 
 @XposedHook(priority = 10)

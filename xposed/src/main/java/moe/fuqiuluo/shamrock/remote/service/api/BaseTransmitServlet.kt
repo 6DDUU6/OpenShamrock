@@ -1,12 +1,12 @@
-package moe.fuqiuluo.shamrock.remote.service.api
+package moe.qiufuluo.shamrock.remote.service.api
 
 import com.tencent.mobileqq.app.QQAppInterface
 import com.tencent.qqnt.kernel.nativeinterface.MsgElement
 import com.tencent.qqnt.kernel.nativeinterface.MsgRecord
 import kotlinx.coroutines.Job
-import moe.fuqiuluo.shamrock.remote.service.data.push.NoticeSubType
-import moe.fuqiuluo.shamrock.remote.service.data.push.NoticeType
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.shamrock.remote.service.data.push.NoticeSubType
+import moe.qiufuluo.shamrock.remote.service.data.push.NoticeType
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
 import oicq.wlogin_sdk.tools.MD5
 
 internal interface BaseTransmitServlet {

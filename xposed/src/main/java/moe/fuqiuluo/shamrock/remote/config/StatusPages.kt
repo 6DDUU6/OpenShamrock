@@ -1,8 +1,8 @@
-package moe.fuqiuluo.shamrock.remote.config
+package moe.qiufuluo.shamrock.remote.config
 
-import moe.fuqiuluo.shamrock.helper.ErrorTokenException
-import moe.fuqiuluo.shamrock.helper.LogicException
-import moe.fuqiuluo.shamrock.helper.ParamsException
+import moe.qiufuluo.shamrock.helper.ErrorTokenException
+import moe.qiufuluo.shamrock.helper.LogicException
+import moe.qiufuluo.shamrock.helper.ParamsException
 import io.ktor.server.application.Application
 import io.ktor.server.application.install
 import io.ktor.server.plugins.statuspages.StatusPages
@@ -10,11 +10,11 @@ import io.ktor.server.request.uri
 import io.ktor.server.response.respond
 import io.ktor.util.AttributeKey
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.remote.structures.CommonResult
-import moe.fuqiuluo.shamrock.remote.structures.ErrorCatch
-import moe.fuqiuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.remote.structures.CommonResult
+import moe.qiufuluo.shamrock.remote.structures.ErrorCatch
+import moe.qiufuluo.shamrock.remote.structures.Status
 
 val ECHO_KEY = AttributeKey<JsonElement>("echo")
 

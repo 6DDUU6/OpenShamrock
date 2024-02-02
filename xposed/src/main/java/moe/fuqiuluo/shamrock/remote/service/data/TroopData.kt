@@ -1,8 +1,8 @@
-package moe.fuqiuluo.shamrock.remote.service.data
+package moe.qiufuluo.shamrock.remote.service.data
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import moe.fuqiuluo.shamrock.remote.service.data.push.MemberRole
+import moe.qiufuluo.shamrock.remote.service.data.push.MemberRole
 
 @Serializable
 internal data class SimpleTroopInfo(

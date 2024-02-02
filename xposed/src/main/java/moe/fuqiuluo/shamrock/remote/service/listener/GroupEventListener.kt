@@ -1,6 +1,6 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 
-package moe.fuqiuluo.shamrock.remote.service.listener
+package moe.qiufuluo.shamrock.remote.service.listener
 
 import com.tencent.qqnt.kernel.nativeinterface.BulletinFeedsDownloadInfo
 import com.tencent.qqnt.kernel.nativeinterface.DataSource
@@ -20,8 +20,8 @@ import com.tencent.qqnt.kernel.nativeinterface.MemberInfo
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import moe.fuqiuluo.qqinterface.servlet.GroupSvc
-import moe.fuqiuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.qqinterface.servlet.GroupSvc
+import moe.qiufuluo.shamrock.helper.LogCenter
 import java.util.ArrayList
 import java.util.HashMap
 

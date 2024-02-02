@@ -1,11 +1,11 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
-import moe.fuqiuluo.shamrock.remote.action.ActionManager
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.remote.structures.resultToString
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.remote.action.ActionManager
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.remote.structures.resultToString
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("get_supported_actions")
 internal object GetSupportedActions: IActionHandler() {

@@ -1,14 +1,14 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.qqinterface.servlet.FriendSvc
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.remote.service.data.FriendRequest
-import moe.fuqiuluo.shamrock.tools.EmptyJsonString
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.qqinterface.servlet.FriendSvc
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.remote.service.data.FriendRequest
+import moe.qiufuluo.shamrock.tools.EmptyJsonString
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("get_friend_system_msg")
 internal object GetFriendSystemMsg : IActionHandler() {

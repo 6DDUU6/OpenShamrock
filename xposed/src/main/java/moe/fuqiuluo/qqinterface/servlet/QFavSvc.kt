@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalSerializationApi::class)
 
-package moe.fuqiuluo.qqinterface.servlet
+package moe.qiufuluo.qqinterface.servlet
 
 import android.graphics.BitmapFactory
 import com.tencent.mobileqq.app.QQAppInterface
@@ -17,13 +17,13 @@ import kotlinx.io.core.writeFully
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.encodeToByteArray
 import kotlinx.serialization.protobuf.ProtoBuf
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.tools.hex2ByteArray
-import moe.fuqiuluo.shamrock.tools.toHexString
-import moe.fuqiuluo.shamrock.utils.DeflateTools
-import moe.fuqiuluo.shamrock.utils.MD5
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.tools.hex2ByteArray
+import moe.qiufuluo.shamrock.tools.toHexString
+import moe.qiufuluo.shamrock.utils.DeflateTools
+import moe.qiufuluo.shamrock.utils.MD5
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
 import moe.whitechi73.protobuf.fav.WeiyunAddRichMediaReq
 import moe.whitechi73.protobuf.fav.WeiyunAuthor
 import moe.whitechi73.protobuf.fav.WeiyunCollectCommInfo

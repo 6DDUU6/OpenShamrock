@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote
+package moe.qiufuluo.shamrock.remote
 
 import io.ktor.server.application.Application
 import io.ktor.server.application.install
@@ -15,14 +15,14 @@ import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
-import moe.fuqiuluo.shamrock.remote.api.*
-import moe.fuqiuluo.shamrock.remote.config.*
-import moe.fuqiuluo.shamrock.remote.plugin.Auth
-import moe.fuqiuluo.shamrock.remote.service.config.ShamrockConfig
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.xposed.helper.internal.DataRequester
-import moe.fuqiuluo.shamrock.xposed.loader.NativeLoader
+import moe.qiufuluo.shamrock.remote.api.*
+import moe.qiufuluo.shamrock.remote.config.*
+import moe.qiufuluo.shamrock.remote.plugin.Auth
+import moe.qiufuluo.shamrock.remote.service.config.ShamrockConfig
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.xposed.helper.internal.DataRequester
+import moe.qiufuluo.shamrock.xposed.loader.NativeLoader
 import org.slf4j.LoggerFactory
 import java.security.KeyStore
 

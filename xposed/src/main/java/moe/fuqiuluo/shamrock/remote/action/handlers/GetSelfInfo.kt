@@ -1,13 +1,13 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import com.tencent.mobileqq.app.QQAppInterface
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.remote.structures.resultToString
-import moe.fuqiuluo.shamrock.remote.service.data.UserDetail
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.remote.structures.resultToString
+import moe.qiufuluo.shamrock.remote.service.data.UserDetail
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("get_self_info")
 internal object GetSelfInfo: IActionHandler() {

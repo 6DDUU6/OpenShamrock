@@ -1,4 +1,4 @@
-package moe.fuqiuluo.symbols
+package moe.qiufuluo.symbols
 
 @Retention(AnnotationRetention.SOURCE)
 @Target(AnnotationTarget.CLASS)

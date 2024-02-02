@@ -1,7 +1,7 @@
-package moe.fuqiuluo.shamrock.helper
+package moe.qiufuluo.shamrock.helper
 
-import moe.fuqiuluo.qqinterface.servlet.BaseSvc
-import moe.fuqiuluo.shamrock.utils.FileUtils
+import moe.qiufuluo.qqinterface.servlet.BaseSvc
+import moe.qiufuluo.shamrock.utils.FileUtils
 import mqq.app.MobileQQ
 import java.io.File
 

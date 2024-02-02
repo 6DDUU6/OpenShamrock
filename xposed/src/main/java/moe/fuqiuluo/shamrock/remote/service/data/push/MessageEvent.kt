@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.service.data.push
+package moe.qiufuluo.shamrock.remote.service.data.push
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

@@ -1,9 +1,9 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
-import moe.fuqiuluo.shamrock.helper.db.MessageDB
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.helper.db.MessageDB
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("get_group_msg_history")
 internal object GetGroupMsgHistory: IActionHandler() {

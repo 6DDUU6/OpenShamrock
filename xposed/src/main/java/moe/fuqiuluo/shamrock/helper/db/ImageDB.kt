@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.helper.db
+package moe.qiufuluo.shamrock.helper.db
 
 import androidx.room.Dao
 import androidx.room.Database

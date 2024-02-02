@@ -1,8 +1,8 @@
-package moe.fuqiuluo.shamrock.xposed.helper
+package moe.qiufuluo.shamrock.xposed.helper
 
-import moe.fuqiuluo.shamrock.tools.broadcast
-import moe.fuqiuluo.shamrock.xposed.helper.internal.DynamicReceiver
-import moe.fuqiuluo.shamrock.xposed.helper.internal.IPCRequest
+import moe.qiufuluo.shamrock.tools.broadcast
+import moe.qiufuluo.shamrock.xposed.helper.internal.DynamicReceiver
+import moe.qiufuluo.shamrock.xposed.helper.internal.IPCRequest
 import mqq.app.MobileQQ
 
 internal object PacketHandler {

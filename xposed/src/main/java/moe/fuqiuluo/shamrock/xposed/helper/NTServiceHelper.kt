@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.xposed.helper
+package moe.qiufuluo.shamrock.xposed.helper
 
 import com.tencent.qqnt.kernel.api.IKernelService
 import com.tencent.qqnt.kernel.api.impl.MsgService

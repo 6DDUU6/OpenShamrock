@@ -1,10 +1,10 @@
-package moe.fuqiuluo.shamrock.xposed.loader
+package moe.qiufuluo.shamrock.xposed.loader
 
 import android.annotation.SuppressLint
 import de.robv.android.xposed.XposedBridge
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.xposed.XposedEntry
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.xposed.XposedEntry
 import mqq.app.MobileQQ
 import java.io.File
 
@@ -26,7 +26,7 @@ internal object NativeLoader {
             if (name == "shamrock" || name == "clover") {
                 val context = MobileQQ.getContext()
                 val packageManager = context.packageManager
-                val applicationInfo = packageManager.getApplicationInfo("moe.fuqiuluo.shamrock.hided", 0)
+                val applicationInfo = packageManager.getApplicationInfo("moe.qiufuluo.shamrock.hided", 0)
                 val file = File(applicationInfo.nativeLibraryDir)
                 LogCenter.log("LoadLibrary(name = $name)")
                 System.load(file.resolve("lib$name.so").also {

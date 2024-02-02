@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.service.data
+package moe.qiufuluo.shamrock.remote.service.data
 
 internal enum class PlatformType {
     ANDROID_PAD,

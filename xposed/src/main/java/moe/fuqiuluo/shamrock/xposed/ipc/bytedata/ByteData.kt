@@ -1,9 +1,9 @@
-package moe.fuqiuluo.shamrock.xposed.ipc.bytedata
+package moe.qiufuluo.shamrock.xposed.ipc.bytedata
 
 import android.os.Parcel
 import android.os.Parcelable
 import com.tencent.secprotocol.ByteData
-import moe.fuqiuluo.shamrock.xposed.ipc.bytedata.IByteData
+import moe.qiufuluo.shamrock.xposed.ipc.bytedata.IByteData
 
 data class IByteDataSign(
     val sign: ByteArray?

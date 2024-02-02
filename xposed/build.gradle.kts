@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "moe.fuqiuluo.xposed"
+    namespace = "moe.qiufuluo.xposed"
     compileSdk = 34
 
     defaultConfig {

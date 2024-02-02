@@ -1,4 +1,4 @@
-package moe.fuqiuluo.symbols
+package moe.qiufuluo.symbols
 
 enum class Process {
     ALL,

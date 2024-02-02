@@ -1,5 +1,5 @@
 @file:OptIn(DelicateCoroutinesApi::class)
-package moe.fuqiuluo.shamrock.xposed.hooks
+package moe.qiufuluo.shamrock.xposed.hooks
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -11,9 +11,9 @@ import de.robv.android.xposed.XposedBridge
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
-import moe.fuqiuluo.shamrock.xposed.helper.internal.DynamicReceiver
-import moe.fuqiuluo.symbols.XposedHook
+import moe.qiufuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.xposed.helper.internal.DynamicReceiver
+import moe.qiufuluo.symbols.XposedHook
 import mqq.app.MobileQQ
 
 internal lateinit var GlobalUi: Handler
@@ -38,7 +38,7 @@ internal class DataReceiver: IAction {
             GlobalUi = Handler(ctx.mainLooper)
             GlobalScope.launch {
                 val intentFilter = IntentFilter()
-                intentFilter.addAction("moe.fuqiuluo.xqbot.dynamic")
+                intentFilter.addAction("moe.qiufuluo.xqbot.dynamic")
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                     MobileQQ.getMobileQQ().registerReceiver(
                         DynamicReceiver, intentFilter,
@@ -51,7 +51,7 @@ internal class DataReceiver: IAction {
             }
         } else if (PlatformUtils.isMsfProcess()) {
             val intentFilter = IntentFilter()
-            intentFilter.addAction("moe.fuqiuluo.msf.dynamic")
+            intentFilter.addAction("moe.qiufuluo.msf.dynamic")
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                 MobileQQ.getMobileQQ().registerReceiver(

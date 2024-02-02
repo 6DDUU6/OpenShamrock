@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.service.config
+package moe.qiufuluo.shamrock.remote.service.config
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

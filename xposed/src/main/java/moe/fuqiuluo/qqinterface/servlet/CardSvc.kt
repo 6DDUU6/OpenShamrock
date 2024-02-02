@@ -1,4 +1,4 @@
-package moe.fuqiuluo.qqinterface.servlet
+package moe.qiufuluo.qqinterface.servlet
 
 import VIP.GetCustomOnlineStatusReq
 import VIP.GetCustomOnlineStatusRsp
@@ -16,11 +16,11 @@ import io.ktor.http.contentType
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
-import moe.fuqiuluo.shamrock.tools.GlobalClient
-import moe.fuqiuluo.shamrock.tools.json
-import moe.fuqiuluo.shamrock.tools.slice
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.tools.GlobalClient
+import moe.qiufuluo.shamrock.tools.json
+import moe.qiufuluo.shamrock.tools.slice
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
 import mqq.app.Packet
 import tencent.im.oidb.cmd0x11b2.oidb_0x11b2
 import tencent.im.oidb.oidb_sso

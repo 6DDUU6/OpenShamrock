@@ -1,4 +1,4 @@
-package moe.fuqiuluo.qqinterface.servlet
+package moe.qiufuluo.qqinterface.servlet
 
 internal object VisitorSvc: BaseSvc() {
     const val FROM_C2C_AIO = 2
@@ -82,8 +82,8 @@ internal object VisitorSvc: BaseSvc() {
             return Result.failure(RuntimeException("unable to fetch contact info"))
         }.getOrThrow()
         sendExtra("VisitorSvc.ReqFavorite") {
-            it.putLong(moe.fuqiuluo.shamrock.remote.service.data.profile.ProfileProtocolConst.PARAM_SELF_UIN, currentUin.toLong())
-            it.putLong(moe.fuqiuluo.shamrock.remote.service.data.profile.ProfileProtocolConst.PARAM_TARGET_UIN, target)
+            it.putLong(moe.qiufuluo.shamrock.remote.service.data.profile.ProfileProtocolConst.PARAM_SELF_UIN, currentUin.toLong())
+            it.putLong(moe.qiufuluo.shamrock.remote.service.data.profile.ProfileProtocolConst.PARAM_TARGET_UIN, target)
             it.putByteArray("vCookies", card.vCookies)
             it.putBoolean("nearby_people", true)
             it.putInt("favoriteSource", FROM_CONTACTS_TAB)

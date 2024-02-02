@@ -1,29 +1,29 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import com.tencent.qqnt.kernel.nativeinterface.MsgConstant
 import com.tencent.qqnt.kernel.nativeinterface.MsgRecord
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.JsonPrimitive
-import moe.fuqiuluo.qqinterface.servlet.GroupSvc
-import moe.fuqiuluo.qqinterface.servlet.MsgSvc
-import moe.fuqiuluo.qqinterface.servlet.TicketSvc
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.helper.MessageHelper
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.remote.service.HttpService
-import moe.fuqiuluo.shamrock.tools.asBoolean
-import moe.fuqiuluo.shamrock.tools.asBooleanOrNull
-import moe.fuqiuluo.shamrock.tools.asInt
-import moe.fuqiuluo.shamrock.tools.asIntOrNull
-import moe.fuqiuluo.shamrock.tools.asJsonObject
-import moe.fuqiuluo.shamrock.tools.asLong
-import moe.fuqiuluo.shamrock.tools.asString
-import moe.fuqiuluo.shamrock.tools.json
-import moe.fuqiuluo.shamrock.tools.jsonArray
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.qqinterface.servlet.GroupSvc
+import moe.qiufuluo.qqinterface.servlet.MsgSvc
+import moe.qiufuluo.qqinterface.servlet.TicketSvc
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.helper.MessageHelper
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.remote.service.HttpService
+import moe.qiufuluo.shamrock.tools.asBoolean
+import moe.qiufuluo.shamrock.tools.asBooleanOrNull
+import moe.qiufuluo.shamrock.tools.asInt
+import moe.qiufuluo.shamrock.tools.asIntOrNull
+import moe.qiufuluo.shamrock.tools.asJsonObject
+import moe.qiufuluo.shamrock.tools.asLong
+import moe.qiufuluo.shamrock.tools.asString
+import moe.qiufuluo.shamrock.tools.json
+import moe.qiufuluo.shamrock.tools.jsonArray
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler(".handle_quick_operation_async")
 internal object QuickOperation: IActionHandler() {

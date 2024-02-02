@@ -1,4 +1,4 @@
-package moe.fuqiuluo.qqinterface.servlet.transfile
+package moe.qiufuluo.qqinterface.servlet.transfile
 
 internal enum class ContactType {
     TROOP,

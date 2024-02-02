@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import io.ktor.client.request.get
 import io.ktor.client.request.header
@@ -9,16 +9,16 @@ import io.ktor.http.HttpStatusCode
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.tools.GlobalClient
-import moe.fuqiuluo.shamrock.tools.GlobalJson
-import moe.fuqiuluo.shamrock.tools.json
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.qqinterface.servlet.TicketSvc
-import moe.fuqiuluo.shamrock.tools.EmptyJsonString
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.tools.GlobalClient
+import moe.qiufuluo.shamrock.tools.GlobalJson
+import moe.qiufuluo.shamrock.tools.json
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.qqinterface.servlet.TicketSvc
+import moe.qiufuluo.shamrock.tools.EmptyJsonString
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("_get_model_show")
 internal object GetModelShowList : IActionHandler() {

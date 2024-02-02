@@ -1,5 +1,5 @@
 @file:OptIn(DelicateCoroutinesApi::class)
-package moe.fuqiuluo.shamrock.xposed.hooks
+package moe.qiufuluo.shamrock.xposed.hooks
 
 import android.content.Context
 import com.tencent.msf.service.protocol.pb.SSOLoginMerge
@@ -8,16 +8,16 @@ import com.tencent.qphone.base.remote.ToServiceMsg
 import com.tencent.qphone.base.util.CodecWarpper
 import kotlinx.atomicfu.atomic
 import kotlinx.coroutines.DelicateCoroutinesApi
-import moe.fuqiuluo.shamrock.remote.service.PacketReceiver
-import moe.fuqiuluo.shamrock.remote.service.config.ShamrockConfig
-import moe.fuqiuluo.shamrock.tools.EMPTY_BYTE_ARRAY
-import moe.fuqiuluo.shamrock.tools.hookMethod
-import moe.fuqiuluo.shamrock.tools.slice
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.xposed.helper.internal.DynamicReceiver
-import moe.fuqiuluo.shamrock.xposed.helper.internal.IPCRequest
-import moe.fuqiuluo.symbols.XposedHook
+import moe.qiufuluo.shamrock.remote.service.PacketReceiver
+import moe.qiufuluo.shamrock.remote.service.config.ShamrockConfig
+import moe.qiufuluo.shamrock.tools.EMPTY_BYTE_ARRAY
+import moe.qiufuluo.shamrock.tools.hookMethod
+import moe.qiufuluo.shamrock.tools.slice
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.xposed.helper.internal.DynamicReceiver
+import moe.qiufuluo.shamrock.xposed.helper.internal.IPCRequest
+import moe.qiufuluo.symbols.XposedHook
 
 private const val MAGIC_APP_ID = 114514
 

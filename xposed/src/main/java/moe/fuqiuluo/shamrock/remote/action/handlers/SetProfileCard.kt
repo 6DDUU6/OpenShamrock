@@ -1,12 +1,12 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import android.os.Bundle
-import moe.fuqiuluo.shamrock.remote.service.data.profile.ProfileProtocolConst
+import moe.qiufuluo.shamrock.remote.service.data.profile.ProfileProtocolConst
 import com.tencent.mobileqq.profilecard.api.IProfileProtocolService
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.symbols.OneBotHandler
 import mqq.app.MobileQQ
 
 @OneBotHandler("set_qq_profile")

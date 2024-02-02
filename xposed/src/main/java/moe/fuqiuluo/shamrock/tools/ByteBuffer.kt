@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.tools
+package moe.qiufuluo.shamrock.tools
 
 import kotlinx.io.core.ByteReadPacket
 import java.nio.ByteBuffer

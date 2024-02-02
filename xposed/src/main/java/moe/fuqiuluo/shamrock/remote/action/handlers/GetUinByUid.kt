@@ -1,13 +1,13 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import kotlinx.coroutines.suspendCancellableCoroutine
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.remote.structures.resultToString
-import moe.fuqiuluo.shamrock.tools.asString
-import moe.fuqiuluo.shamrock.xposed.helper.NTServiceFetcher
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.remote.structures.resultToString
+import moe.qiufuluo.shamrock.tools.asString
+import moe.qiufuluo.shamrock.xposed.helper.NTServiceFetcher
+import moe.qiufuluo.symbols.OneBotHandler
 import kotlin.coroutines.resume
 
 @OneBotHandler("get_uin_by_uid")

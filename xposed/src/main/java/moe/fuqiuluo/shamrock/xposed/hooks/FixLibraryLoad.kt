@@ -1,9 +1,9 @@
-package moe.fuqiuluo.shamrock.xposed.hooks
+package moe.qiufuluo.shamrock.xposed.hooks
 
 import android.content.Context
-import moe.fuqiuluo.shamrock.tools.hookMethod
-import moe.fuqiuluo.shamrock.xposed.loader.NativeLoader
-import moe.fuqiuluo.symbols.XposedHook
+import moe.qiufuluo.shamrock.tools.hookMethod
+import moe.qiufuluo.shamrock.xposed.loader.NativeLoader
+import moe.qiufuluo.symbols.XposedHook
 
 @XposedHook(priority = 0)
 internal class FixLibraryLoad: IAction {

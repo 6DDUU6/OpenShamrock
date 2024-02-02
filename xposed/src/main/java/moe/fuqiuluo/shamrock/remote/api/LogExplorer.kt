@@ -1,11 +1,11 @@
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
 import io.ktor.server.application.call
 import io.ktor.server.response.respondText
 import io.ktor.server.routing.Routing
-import moe.fuqiuluo.shamrock.tools.fetchOrNull
-import moe.fuqiuluo.shamrock.tools.getOrPost
-import moe.fuqiuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.tools.fetchOrNull
+import moe.qiufuluo.shamrock.tools.getOrPost
+import moe.qiufuluo.shamrock.helper.LogCenter
 
 fun Routing.showLog() {
     getOrPost("/log") {

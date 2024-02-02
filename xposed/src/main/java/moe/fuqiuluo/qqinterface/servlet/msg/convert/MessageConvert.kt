@@ -1,14 +1,14 @@
-package moe.fuqiuluo.qqinterface.servlet.msg.convert
+package moe.qiufuluo.qqinterface.servlet.msg.convert
 
 import com.tencent.qqnt.kernel.nativeinterface.MsgConstant
 import com.tencent.qqnt.kernel.nativeinterface.MsgElement
 import com.tencent.qqnt.kernel.nativeinterface.MsgRecord
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.qqinterface.servlet.msg.convert.MessageElemConverter.*
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.helper.MessageHelper
-import moe.fuqiuluo.shamrock.tools.json
+import moe.qiufuluo.qqinterface.servlet.msg.convert.MessageElemConverter.*
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.helper.MessageHelper
+import moe.qiufuluo.shamrock.tools.json
 
 internal typealias MessageSegmentList = ArrayList<MessageSegment>
 

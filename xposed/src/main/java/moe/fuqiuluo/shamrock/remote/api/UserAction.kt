@@ -1,15 +1,15 @@
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
 import io.ktor.http.ContentType
-import moe.fuqiuluo.shamrock.helper.LogicException
+import moe.qiufuluo.shamrock.helper.LogicException
 import io.ktor.server.application.call
 import io.ktor.server.response.respondText
 import io.ktor.server.routing.Routing
-import moe.fuqiuluo.shamrock.remote.action.ActionManager
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.handlers.*
-import moe.fuqiuluo.shamrock.tools.*
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.remote.action.ActionManager
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.handlers.*
+import moe.qiufuluo.shamrock.tools.*
+import moe.qiufuluo.shamrock.utils.PlatformUtils
 
 fun Routing.userAction() {
     getOrPost("/switch_account") {

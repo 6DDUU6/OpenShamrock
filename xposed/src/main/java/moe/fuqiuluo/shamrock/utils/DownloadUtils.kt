@@ -1,5 +1,5 @@
 @file:OptIn(DelicateCoroutinesApi::class, ObsoleteCoroutinesApi::class)
-package moe.fuqiuluo.shamrock.utils
+package moe.qiufuluo.shamrock.utils
 
 import io.ktor.client.request.get
 import io.ktor.client.statement.bodyAsChannel
@@ -14,9 +14,9 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.tools.GlobalClient
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.tools.GlobalClient
 import java.io.File
 import java.io.RandomAccessFile
 import java.net.HttpURLConnection

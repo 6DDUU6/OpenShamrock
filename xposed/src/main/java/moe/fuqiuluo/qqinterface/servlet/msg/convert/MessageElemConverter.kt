@@ -1,18 +1,18 @@
-package moe.fuqiuluo.qqinterface.servlet.msg.convert
+package moe.qiufuluo.qqinterface.servlet.msg.convert
 
 import com.tencent.qqnt.kernel.nativeinterface.MsgConstant
 import com.tencent.qqnt.kernel.nativeinterface.MsgElement
-import moe.fuqiuluo.qqinterface.servlet.transfile.RichProtoSvc
-import moe.fuqiuluo.shamrock.helper.ContactHelper
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.helper.MessageHelper
-import moe.fuqiuluo.shamrock.helper.db.ImageDB
-import moe.fuqiuluo.shamrock.helper.db.ImageMapping
-import moe.fuqiuluo.shamrock.helper.db.MessageDB
-import moe.fuqiuluo.shamrock.tools.asJsonObject
-import moe.fuqiuluo.shamrock.tools.asString
-import moe.fuqiuluo.shamrock.tools.json
+import moe.qiufuluo.qqinterface.servlet.transfile.RichProtoSvc
+import moe.qiufuluo.shamrock.helper.ContactHelper
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.helper.MessageHelper
+import moe.qiufuluo.shamrock.helper.db.ImageDB
+import moe.qiufuluo.shamrock.helper.db.ImageMapping
+import moe.qiufuluo.shamrock.helper.db.MessageDB
+import moe.qiufuluo.shamrock.tools.asJsonObject
+import moe.qiufuluo.shamrock.tools.asString
+import moe.qiufuluo.shamrock.tools.json
 
 internal sealed class MessageElemConverter: IMessageConvert {
     /**

@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.tools
+package moe.qiufuluo.shamrock.tools
 
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.HttpTimeout

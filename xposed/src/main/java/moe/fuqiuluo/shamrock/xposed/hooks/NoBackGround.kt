@@ -1,12 +1,12 @@
-package moe.fuqiuluo.shamrock.xposed.hooks
+package moe.qiufuluo.shamrock.xposed.hooks
 
 import android.content.Context
 import de.robv.android.xposed.XposedHelpers
-import moe.fuqiuluo.shamrock.tools.hookMethod
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.xposed.loader.LuoClassloader
-import moe.fuqiuluo.symbols.XposedHook
+import moe.qiufuluo.shamrock.tools.hookMethod
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.xposed.loader.LuoClassloader
+import moe.qiufuluo.symbols.XposedHook
 import mqq.app.MobileQQ
 
 @XposedHook(priority = 10)

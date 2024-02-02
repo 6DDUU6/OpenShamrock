@@ -1,6 +1,6 @@
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
-import moe.fuqiuluo.shamrock.helper.MessageHelper
+import moe.qiufuluo.shamrock.helper.MessageHelper
 import com.tencent.qqnt.kernel.nativeinterface.MsgConstant
 import io.ktor.http.ContentType
 import io.ktor.server.application.call
@@ -9,24 +9,24 @@ import io.ktor.server.routing.Routing
 import io.ktor.server.routing.get
 import io.ktor.server.routing.post
 import io.ktor.server.routing.route
-import moe.fuqiuluo.shamrock.helper.db.MessageDB
-import moe.fuqiuluo.shamrock.remote.action.handlers.*
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.tools.fetchGetOrNull
-import moe.fuqiuluo.shamrock.tools.fetchGetOrThrow
-import moe.fuqiuluo.shamrock.tools.fetchOrNull
-import moe.fuqiuluo.shamrock.tools.fetchOrThrow
-import moe.fuqiuluo.shamrock.tools.fetchPostJsonArray
-import moe.fuqiuluo.shamrock.tools.fetchPostJsonObject
-import moe.fuqiuluo.shamrock.tools.fetchPostJsonString
-import moe.fuqiuluo.shamrock.tools.fetchPostOrNull
-import moe.fuqiuluo.shamrock.tools.fetchPostOrThrow
-import moe.fuqiuluo.shamrock.tools.getOrPost
-import moe.fuqiuluo.shamrock.tools.isJsonData
-import moe.fuqiuluo.shamrock.tools.isJsonObject
-import moe.fuqiuluo.shamrock.tools.isJsonString
-import moe.fuqiuluo.shamrock.tools.jsonArray
-import moe.fuqiuluo.shamrock.tools.respond
+import moe.qiufuluo.shamrock.helper.db.MessageDB
+import moe.qiufuluo.shamrock.remote.action.handlers.*
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.tools.fetchGetOrNull
+import moe.qiufuluo.shamrock.tools.fetchGetOrThrow
+import moe.qiufuluo.shamrock.tools.fetchOrNull
+import moe.qiufuluo.shamrock.tools.fetchOrThrow
+import moe.qiufuluo.shamrock.tools.fetchPostJsonArray
+import moe.qiufuluo.shamrock.tools.fetchPostJsonObject
+import moe.qiufuluo.shamrock.tools.fetchPostJsonString
+import moe.qiufuluo.shamrock.tools.fetchPostOrNull
+import moe.qiufuluo.shamrock.tools.fetchPostOrThrow
+import moe.qiufuluo.shamrock.tools.getOrPost
+import moe.qiufuluo.shamrock.tools.isJsonData
+import moe.qiufuluo.shamrock.tools.isJsonObject
+import moe.qiufuluo.shamrock.tools.isJsonString
+import moe.qiufuluo.shamrock.tools.jsonArray
+import moe.qiufuluo.shamrock.tools.respond
 
 fun Routing.messageAction() {
     route("/send_group_forward_(msg|message)".toRegex()) {

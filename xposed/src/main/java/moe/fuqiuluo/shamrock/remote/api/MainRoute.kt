@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
 import io.ktor.http.ContentType
 import io.ktor.server.application.ApplicationCall
@@ -15,27 +15,27 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.jsonObject
-import moe.fuqiuluo.shamrock.remote.HTTPServer
-import moe.fuqiuluo.shamrock.remote.action.ActionManager
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.config.ECHO_KEY
-import moe.fuqiuluo.shamrock.remote.structures.EmptyObject
-import moe.fuqiuluo.shamrock.remote.structures.IndexData
-import moe.fuqiuluo.shamrock.remote.structures.Status
-import moe.fuqiuluo.shamrock.tools.EmptyJsonObject
-import moe.fuqiuluo.shamrock.tools.EmptyJsonString
-import moe.fuqiuluo.shamrock.tools.asJsonObjectOrNull
-import moe.fuqiuluo.shamrock.tools.asString
-import moe.fuqiuluo.shamrock.tools.fetchOrNull
-import moe.fuqiuluo.shamrock.tools.fetchOrThrow
-import moe.fuqiuluo.shamrock.tools.fetchPostJsonElement
-import moe.fuqiuluo.shamrock.tools.fetchPostJsonElementOrNull
-import moe.fuqiuluo.shamrock.tools.fetchPostJsonObjectOrNull
-import moe.fuqiuluo.shamrock.tools.isJsonArray
-import moe.fuqiuluo.shamrock.tools.isJsonObject
-import moe.fuqiuluo.shamrock.tools.json
-import moe.fuqiuluo.shamrock.tools.respond
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.remote.HTTPServer
+import moe.qiufuluo.shamrock.remote.action.ActionManager
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.config.ECHO_KEY
+import moe.qiufuluo.shamrock.remote.structures.EmptyObject
+import moe.qiufuluo.shamrock.remote.structures.IndexData
+import moe.qiufuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.tools.EmptyJsonObject
+import moe.qiufuluo.shamrock.tools.EmptyJsonString
+import moe.qiufuluo.shamrock.tools.asJsonObjectOrNull
+import moe.qiufuluo.shamrock.tools.asString
+import moe.qiufuluo.shamrock.tools.fetchOrNull
+import moe.qiufuluo.shamrock.tools.fetchOrThrow
+import moe.qiufuluo.shamrock.tools.fetchPostJsonElement
+import moe.qiufuluo.shamrock.tools.fetchPostJsonElementOrNull
+import moe.qiufuluo.shamrock.tools.fetchPostJsonObjectOrNull
+import moe.qiufuluo.shamrock.tools.isJsonArray
+import moe.qiufuluo.shamrock.tools.isJsonObject
+import moe.qiufuluo.shamrock.tools.json
+import moe.qiufuluo.shamrock.tools.respond
+import moe.qiufuluo.shamrock.utils.PlatformUtils
 import mqq.app.MobileQQ
 
 @Serializable

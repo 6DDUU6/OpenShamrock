@@ -1,10 +1,10 @@
 @file:OptIn(DelicateCoroutinesApi::class, ExperimentalSerializationApi::class)
 
-package moe.fuqiuluo.shamrock.remote.service.listener
+package moe.qiufuluo.shamrock.remote.service.listener
 
 import com.tencent.qqnt.kernel.nativeinterface.MsgConstant
 import kotlinx.coroutines.DelicateCoroutinesApi
-import moe.fuqiuluo.shamrock.helper.ContactHelper
+import moe.qiufuluo.shamrock.helper.ContactHelper
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.io.core.ByteReadPacket
@@ -15,22 +15,22 @@ import kotlinx.serialization.decodeFromByteArray
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.protobuf.ProtoBuf
-import moe.fuqiuluo.qqinterface.servlet.FriendSvc.requestFriendSystemMsgNew
-import moe.fuqiuluo.qqinterface.servlet.GroupSvc
-import moe.fuqiuluo.qqinterface.servlet.GroupSvc.requestGroupSystemMsgNew
-import moe.fuqiuluo.qqinterface.servlet.TicketSvc.getLongUin
-import moe.fuqiuluo.shamrock.helper.MessageHelper
-import moe.fuqiuluo.shamrock.remote.service.data.push.NoticeSubType
-import moe.fuqiuluo.shamrock.remote.service.data.push.NoticeType
-import moe.fuqiuluo.shamrock.tools.slice
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.remote.service.api.GlobalEventTransmitter
-import moe.fuqiuluo.shamrock.remote.service.data.push.RequestSubType
-import moe.fuqiuluo.shamrock.tools.asJsonObject
-import moe.fuqiuluo.shamrock.tools.asString
-import moe.fuqiuluo.shamrock.tools.readBuf32Long
-import moe.fuqiuluo.shamrock.xposed.helper.PacketHandler
+import moe.qiufuluo.qqinterface.servlet.FriendSvc.requestFriendSystemMsgNew
+import moe.qiufuluo.qqinterface.servlet.GroupSvc
+import moe.qiufuluo.qqinterface.servlet.GroupSvc.requestGroupSystemMsgNew
+import moe.qiufuluo.qqinterface.servlet.TicketSvc.getLongUin
+import moe.qiufuluo.shamrock.helper.MessageHelper
+import moe.qiufuluo.shamrock.remote.service.data.push.NoticeSubType
+import moe.qiufuluo.shamrock.remote.service.data.push.NoticeType
+import moe.qiufuluo.shamrock.tools.slice
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.remote.service.api.GlobalEventTransmitter
+import moe.qiufuluo.shamrock.remote.service.data.push.RequestSubType
+import moe.qiufuluo.shamrock.tools.asJsonObject
+import moe.qiufuluo.shamrock.tools.asString
+import moe.qiufuluo.shamrock.tools.readBuf32Long
+import moe.qiufuluo.shamrock.xposed.helper.PacketHandler
 import moe.whitechi73.protobuf.message.*
 import moe.whitechi73.protobuf.push.*
 

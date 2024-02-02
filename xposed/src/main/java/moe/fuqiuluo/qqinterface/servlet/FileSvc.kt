@@ -1,17 +1,17 @@
-package moe.fuqiuluo.qqinterface.servlet
+package moe.qiufuluo.qqinterface.servlet
 
 import com.tencent.mobileqq.pb.ByteStringMicro
 import kotlinx.serialization.decodeFromByteArray
 import kotlinx.serialization.encodeToByteArray
 import kotlinx.serialization.protobuf.ProtoBuf
-import moe.fuqiuluo.qqinterface.servlet.structures.*
-import moe.fuqiuluo.qqinterface.servlet.transfile.RichProtoSvc
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.tools.EMPTY_BYTE_ARRAY
-import moe.fuqiuluo.shamrock.tools.slice
-import moe.fuqiuluo.shamrock.tools.toHexString
-import moe.fuqiuluo.shamrock.utils.DeflateTools
+import moe.qiufuluo.qqinterface.servlet.structures.*
+import moe.qiufuluo.qqinterface.servlet.transfile.RichProtoSvc
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.tools.EMPTY_BYTE_ARRAY
+import moe.qiufuluo.shamrock.tools.slice
+import moe.qiufuluo.shamrock.tools.toHexString
+import moe.qiufuluo.shamrock.utils.DeflateTools
 import moe.whitechi73.protobuf.oidb.cmd0x6d7.CreateFolderReq
 import moe.whitechi73.protobuf.oidb.cmd0x6d7.DeleteFolderReq
 import moe.whitechi73.protobuf.oidb.cmd0x6d7.MoveFolderReq

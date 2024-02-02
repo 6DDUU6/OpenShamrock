@@ -1,7 +1,7 @@
 @file:Suppress("UNCHECKED_CAST", "LocalVariableName", "PrivatePropertyName")
 @file:OptIn(KspExperimental::class)
 
-package moe.fuqiuluo.ksp.impl
+package moe.qiufuluo.ksp.impl
 
 import com.google.devtools.ksp.KspExperimental
 import com.google.devtools.ksp.getAnnotationsByType
@@ -19,8 +19,8 @@ import com.google.devtools.ksp.validate
 import com.squareup.kotlinpoet.ClassName
 import com.squareup.kotlinpoet.FileSpec
 import com.squareup.kotlinpoet.FunSpec
-import moe.fuqiuluo.symbols.Process
-import moe.fuqiuluo.symbols.XposedHook
+import moe.qiufuluo.symbols.Process
+import moe.qiufuluo.symbols.XposedHook
 
 class XposedHookProcessor(
     private val codeGenerator: CodeGenerator,
@@ -46,7 +46,7 @@ class XposedHookProcessor(
             }
 
             val context = ClassName("android.content", "Context")
-            val packageName = "moe.fuqiuluo.shamrock.xposed.hooks"
+            val packageName = "moe.qiufuluo.shamrock.xposed.hooks"
             val fileSpec = FileSpec.builder(packageName, "AutoActionLoader").addFunction(FunSpec.builder("runFirstActions")
                 .addParameter("ctx", context)
                 .apply {
@@ -83,7 +83,7 @@ class XposedHookProcessor(
                 serviceActions.forEach {
                     addImport(it.packageName.asString(), it.simpleName.asString())
                 }
-                addImport("moe.fuqiuluo.shamrock.utils", "PlatformUtils")
+                addImport("moe.qiufuluo.shamrock.utils", "PlatformUtils")
             }.build()
 
             codeGenerator.createNewFile(

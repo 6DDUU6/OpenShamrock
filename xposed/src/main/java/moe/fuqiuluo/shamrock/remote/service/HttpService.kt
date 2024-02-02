@@ -1,11 +1,11 @@
 @file:OptIn(DelicateCoroutinesApi::class)
-package moe.fuqiuluo.shamrock.remote.service
+package moe.qiufuluo.shamrock.remote.service
 
 import com.tencent.qqnt.kernel.nativeinterface.MsgConstant
-import moe.fuqiuluo.shamrock.helper.MessageHelper
+import moe.qiufuluo.shamrock.helper.MessageHelper
 import com.tencent.qqnt.kernel.nativeinterface.MsgRecord
-import moe.fuqiuluo.qqinterface.servlet.GroupSvc
-import moe.fuqiuluo.qqinterface.servlet.MsgSvc
+import moe.qiufuluo.qqinterface.servlet.GroupSvc
+import moe.qiufuluo.qqinterface.servlet.MsgSvc
 import io.ktor.client.statement.bodyAsText
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
@@ -16,14 +16,14 @@ import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.JsonPrimitive
-import moe.fuqiuluo.shamrock.remote.service.api.HttpTransmitServlet
-import moe.fuqiuluo.shamrock.tools.*
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.remote.action.ActionManager
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.handlers.QuickOperation.quicklyReply
-import moe.fuqiuluo.shamrock.remote.service.api.GlobalEventTransmitter
+import moe.qiufuluo.shamrock.remote.service.api.HttpTransmitServlet
+import moe.qiufuluo.shamrock.tools.*
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.remote.action.ActionManager
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.handlers.QuickOperation.quicklyReply
+import moe.qiufuluo.shamrock.remote.service.api.GlobalEventTransmitter
 
 internal object HttpService: HttpTransmitServlet() {
     private val jobList = arrayListOf<Job>()

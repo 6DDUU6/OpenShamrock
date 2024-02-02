@@ -1,14 +1,14 @@
-package moe.fuqiuluo.shamrock.remote.api
+package moe.qiufuluo.shamrock.remote.api
 
 import com.tencent.mobileqq.qqguildsdk.api.IGPSService
 import io.ktor.server.application.call
 import io.ktor.server.response.respondText
 import io.ktor.server.routing.Routing
-import moe.fuqiuluo.shamrock.remote.structures.EmptyObject
-import moe.fuqiuluo.shamrock.tools.getOrPost
-import moe.fuqiuluo.shamrock.tools.respond
-import moe.fuqiuluo.shamrock.xposed.helper.AppRuntimeFetcher
-import moe.fuqiuluo.shamrock.xposed.helper.NTServiceFetcher
+import moe.qiufuluo.shamrock.remote.structures.EmptyObject
+import moe.qiufuluo.shamrock.tools.getOrPost
+import moe.qiufuluo.shamrock.tools.respond
+import moe.qiufuluo.shamrock.xposed.helper.AppRuntimeFetcher
+import moe.qiufuluo.shamrock.xposed.helper.NTServiceFetcher
 
 fun Routing.guildAction() {
     getOrPost("/get_guild_service_profile") {

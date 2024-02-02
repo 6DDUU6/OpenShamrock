@@ -8,12 +8,12 @@ plugins {
 }
 
 android {
-    namespace = "moe.fuqiuluo.shamrock"
+    namespace = "moe.qiufuluo.shamrock"
     ndkVersion = "25.1.8937393"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "moe.fuqiuluo.shamrock"
+        applicationId = "moe.qiufuluo.shamrock"
         minSdk = 27
         targetSdk = 34
         versionCode = getVersionCode()

@@ -1,11 +1,11 @@
-package moe.fuqiuluo.qqinterface.servlet
+package moe.qiufuluo.qqinterface.servlet
 
 import com.tencent.mobileqq.app.QQAppInterface
 import com.tencent.mobileqq.pskey.oidb.cmd0x102a.oidb_cmd0x102a
 import io.ktor.client.request.get
 import io.ktor.client.request.header
-import moe.fuqiuluo.shamrock.tools.GlobalClientNoRedirect
-import moe.fuqiuluo.shamrock.tools.slice
+import moe.qiufuluo.shamrock.tools.GlobalClientNoRedirect
+import moe.qiufuluo.shamrock.tools.slice
 import mqq.app.MobileQQ
 import mqq.manager.TicketManager
 import oicq.wlogin_sdk.request.Ticket

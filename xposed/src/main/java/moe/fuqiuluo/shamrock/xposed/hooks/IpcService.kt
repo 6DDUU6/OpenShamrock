@@ -1,20 +1,20 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 
-package moe.fuqiuluo.shamrock.xposed.hooks
+package moe.qiufuluo.shamrock.xposed.hooks
 
 import android.content.Context
 import android.os.Bundle
 import kotlinx.coroutines.DelicateCoroutinesApi
-import moe.fuqiuluo.shamrock.utils.PlatformUtils
+import moe.qiufuluo.shamrock.utils.PlatformUtils
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import moe.fuqiuluo.shamrock.tools.broadcast
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.xposed.helper.internal.*
-import moe.fuqiuluo.shamrock.xposed.ipc.ShamrockIpc
-import moe.fuqiuluo.symbols.Process
-import moe.fuqiuluo.symbols.XposedHook
+import moe.qiufuluo.shamrock.tools.broadcast
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.xposed.helper.internal.*
+import moe.qiufuluo.shamrock.xposed.ipc.ShamrockIpc
+import moe.qiufuluo.symbols.Process
+import moe.qiufuluo.symbols.XposedHook
 
 @XposedHook(Process.MSF, priority = 0)
 internal class IpcService: IAction {

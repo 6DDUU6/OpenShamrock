@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.tools
+package moe.qiufuluo.shamrock.tools
 
 import io.ktor.http.ContentType
 import io.ktor.http.Parameters
@@ -18,15 +18,15 @@ import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.jsonObject
-import moe.fuqiuluo.shamrock.helper.ParamsException
+import moe.qiufuluo.shamrock.helper.ParamsException
 import io.ktor.http.HttpMethod
 import io.ktor.http.parseUrlEncodedParameters
 import io.ktor.server.request.httpMethod
 import io.ktor.server.routing.route
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.shamrock.remote.structures.CommonResult
-import moe.fuqiuluo.shamrock.remote.structures.EmptyObject
-import moe.fuqiuluo.shamrock.remote.structures.Status
+import moe.qiufuluo.shamrock.remote.structures.CommonResult
+import moe.qiufuluo.shamrock.remote.structures.EmptyObject
+import moe.qiufuluo.shamrock.remote.structures.Status
 
 @DslMarker
 @Target(AnnotationTarget.FUNCTION, AnnotationTarget.CLASS, AnnotationTarget.TYPEALIAS, AnnotationTarget.TYPE)

@@ -1,18 +1,18 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import kotlinx.serialization.json.JsonElement
-import moe.fuqiuluo.qqinterface.servlet.GroupSvc
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.remote.service.data.GroupAllHonor
-import moe.fuqiuluo.shamrock.remote.service.data.GroupMemberHonor
-import moe.fuqiuluo.shamrock.remote.service.data.HONOR_GROUP_FIRE
-import moe.fuqiuluo.shamrock.remote.service.data.HONOR_GROUP_FLAME
-import moe.fuqiuluo.shamrock.remote.service.data.HONOR_HAPPY
-import moe.fuqiuluo.shamrock.remote.service.data.HONOR_NEWBIE
-import moe.fuqiuluo.shamrock.remote.service.data.HONOR_TALKATIVE
-import moe.fuqiuluo.shamrock.tools.EmptyJsonString
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.qqinterface.servlet.GroupSvc
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.remote.service.data.GroupAllHonor
+import moe.qiufuluo.shamrock.remote.service.data.GroupMemberHonor
+import moe.qiufuluo.shamrock.remote.service.data.HONOR_GROUP_FIRE
+import moe.qiufuluo.shamrock.remote.service.data.HONOR_GROUP_FLAME
+import moe.qiufuluo.shamrock.remote.service.data.HONOR_HAPPY
+import moe.qiufuluo.shamrock.remote.service.data.HONOR_NEWBIE
+import moe.qiufuluo.shamrock.remote.service.data.HONOR_TALKATIVE
+import moe.qiufuluo.shamrock.tools.EmptyJsonString
+import moe.qiufuluo.symbols.OneBotHandler
 
 @OneBotHandler("get_group_honor_info", ["get_troop_honor_info"])
 internal object GetTroopHonor: IActionHandler() {

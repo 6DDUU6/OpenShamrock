@@ -1,7 +1,7 @@
-package moe.fuqiuluo.qqinterface.servlet.ark
+package moe.qiufuluo.qqinterface.servlet.ark
 
 import com.tencent.qqnt.kernel.nativeinterface.MsgConstant
-import moe.fuqiuluo.qqinterface.servlet.BaseSvc
+import moe.qiufuluo.qqinterface.servlet.BaseSvc
 import tencent.im.oidb.cmd0xb77.oidb_cmd0xb77
 
 sealed class ArkAppInfo(

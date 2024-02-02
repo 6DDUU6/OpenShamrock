@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.action.handlers
+package moe.qiufuluo.shamrock.remote.action.handlers
 
 import kotlinx.io.core.ByteReadPacket
 import kotlinx.io.core.discardExact
@@ -7,12 +7,12 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromByteArray
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.protobuf.ProtoBuf
-import moe.fuqiuluo.qqinterface.servlet.QFavSvc
-import moe.fuqiuluo.shamrock.remote.action.ActionSession
-import moe.fuqiuluo.shamrock.remote.action.IActionHandler
-import moe.fuqiuluo.shamrock.tools.EmptyJsonString
-import moe.fuqiuluo.shamrock.utils.DeflateTools
-import moe.fuqiuluo.symbols.OneBotHandler
+import moe.qiufuluo.qqinterface.servlet.QFavSvc
+import moe.qiufuluo.shamrock.remote.action.ActionSession
+import moe.qiufuluo.shamrock.remote.action.IActionHandler
+import moe.qiufuluo.shamrock.tools.EmptyJsonString
+import moe.qiufuluo.shamrock.utils.DeflateTools
+import moe.qiufuluo.symbols.OneBotHandler
 import moe.whitechi73.protobuf.fav.WeiyunComm
 
 @OneBotHandler("fav.add_text_msg")

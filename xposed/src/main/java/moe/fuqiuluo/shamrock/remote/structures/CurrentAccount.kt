@@ -1,4 +1,4 @@
-package moe.fuqiuluo.shamrock.remote.structures
+package moe.qiufuluo.shamrock.remote.structures
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

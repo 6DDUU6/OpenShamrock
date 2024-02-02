@@ -1,10 +1,10 @@
-package moe.fuqiuluo.qqinterface.servlet
+package moe.qiufuluo.qqinterface.servlet
 
 import QQService.SvcDevLoginInfo
 import QQService.SvcReqGetDevLoginInfo
 import QQService.SvcRspGetDevLoginInfo
 import com.qq.jce.wup.UniPacket
-import moe.fuqiuluo.qqinterface.servlet.BaseSvc
+import moe.qiufuluo.qqinterface.servlet.BaseSvc
 import mqq.app.MobileQQ
 import mqq.app.Packet
 import oicq.wlogin_sdk.tools.util

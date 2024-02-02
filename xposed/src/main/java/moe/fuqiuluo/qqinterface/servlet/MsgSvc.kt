@@ -1,6 +1,6 @@
 @file:OptIn(DelicateCoroutinesApi::class)
 
-package moe.fuqiuluo.qqinterface.servlet
+package moe.qiufuluo.qqinterface.servlet
 
 import com.tencent.mobileqq.qroute.QRoute
 import com.tencent.mobileqq.troop.api.ITroopMemberNameService
@@ -18,15 +18,15 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.serialization.json.JsonArray
-import moe.fuqiuluo.shamrock.helper.ContactHelper
-import moe.fuqiuluo.shamrock.helper.Level
-import moe.fuqiuluo.shamrock.helper.LogCenter
-import moe.fuqiuluo.shamrock.helper.MessageHelper
-import moe.fuqiuluo.shamrock.helper.SendMsgException
-import moe.fuqiuluo.shamrock.remote.structures.SendMsgResult
-import moe.fuqiuluo.shamrock.tools.EMPTY_BYTE_ARRAY
-import moe.fuqiuluo.shamrock.xposed.helper.NTServiceFetcher
-import moe.fuqiuluo.shamrock.xposed.helper.msgService
+import moe.qiufuluo.shamrock.helper.ContactHelper
+import moe.qiufuluo.shamrock.helper.Level
+import moe.qiufuluo.shamrock.helper.LogCenter
+import moe.qiufuluo.shamrock.helper.MessageHelper
+import moe.qiufuluo.shamrock.helper.SendMsgException
+import moe.qiufuluo.shamrock.remote.structures.SendMsgResult
+import moe.qiufuluo.shamrock.tools.EMPTY_BYTE_ARRAY
+import moe.qiufuluo.shamrock.xposed.helper.NTServiceFetcher
+import moe.qiufuluo.shamrock.xposed.helper.msgService
 import java.util.UUID
 import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
